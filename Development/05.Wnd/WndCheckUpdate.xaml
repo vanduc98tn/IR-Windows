@@ -1,0 +1,99 @@
+﻿<Window x:Class="Development.WndCheckUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Development"
+        mc:Ignorable="d"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="WndCheckUpdate" Height="250" Width="800"
+        PreviewKeyDown="Window_PreviewKeyDown">
+
+    <Grid Background="Transparent" MouseDown="Grid_MouseDown" Margin="3">
+        <Grid.RowDefinitions>
+                <RowDefinition Height="7*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Button" BasedOn="{StaticResource sButton}">
+                    <Setter Property="FontSize" Value="24" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="Margin" Value="0,5,5,5" />
+                <Setter Property="Background" Value="#333333" />
+
+                </Style>
+            </Grid.Resources>
+
+            <Grid Grid.Row="0" Background="White">
+            <StackPanel Orientation="Vertical">
+                <Label Height="40" Background="White" VerticalContentAlignment="Center" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Foreground="#333333" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10"  >
+                    Waiting Check Update
+                </Label>
+                <Label  Name="lblMessage" Height="40" Background="White" VerticalContentAlignment="Center" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Foreground="#333333" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"   >
+                   
+                </Label>
+            </StackPanel>
+           
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <!-- Thanh ProgressBar -->
+            <!-- Progress Bar -->
+            
+            <ProgressBar Name="progressBar" Width="800" Height="50" Minimum="0" Maximum="100"
+             Value="0" Foreground="CadetBlue" Background="LightGray"
+             BorderBrush="White" BorderThickness="2" />
+
+            <!-- Chữ % chạy bên trong -->
+                <TextBlock Name="progressText" FontSize="20" FontWeight="Bold" 
+                 Foreground="Black"
+                 HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Background="White">
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="20 15 0 0">
+                    
+                    
+                <Button Width="180" Height="52"   x:Name="btnYes" Foreground="White" BorderThickness="0" Padding="10">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+
+                        <!-- Tạo dấu V -->
+                        <Canvas Width="20" Height="20" Margin="0,0,10,0">
+                            <Polyline Points="2,10 8,18 18,2" Stroke="#4A90E2" StrokeThickness="3" StrokeLineJoin="Round"/>
+                        </Canvas>
+                        <!-- Nội dung chính -->
+                        <StackPanel>
+                            <TextBlock Text="Update Software" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock Text="Download Now" FontSize="12" Foreground="LightGray"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Button>
+                <Button Width="180" Height="52"   x:Name="btnNo" Foreground="White" BorderThickness="0" Padding="10">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+
+                        <!-- Tạo dấu X -->
+                        <Canvas Width="20" Height="20" Margin="0,0,10,0">
+                            <Line X1="2" Y1="2" X2="18" Y2="18" Stroke="Red" StrokeThickness="3"/>
+                            <Line X1="2" Y1="18" X2="18" Y2="2" Stroke="Red" StrokeThickness="3"/>
+                        </Canvas>
+                        <!-- Nội dung chính -->
+                        <StackPanel>
+                            <TextBlock Text="Cancel Update " FontSize="14" FontWeight="Bold"/>
+                            <TextBlock Text="Close " FontSize="12" Foreground="LightGray"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Button>
+
+
+                <Label  Name="lbUpdate" Height="100" Background="White" VerticalContentAlignment="Center" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Foreground="#333333" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10,0,10,00" >Check Connect Server....
+                </Label>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+    
+  
+</Window>
