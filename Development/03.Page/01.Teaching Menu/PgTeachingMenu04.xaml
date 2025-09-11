@@ -536,7 +536,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid Grid.Row="0">
                                     <Grid Grid.Row="0" Grid.Column="0">
-                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#7 - ROTARY VISION #2</Label>
+                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#7 - ROTARY VISION #2 Y</Label>
                                     </Grid>
                                 </Grid>
                                 <Grid Grid.Row="1">
@@ -1112,7 +1112,7 @@
                         </Grid>
                     </TabItem>
 
-                    <TabItem FontSize="16" Header="U6#7 - TESTER VISION#2"  Height="30">
+                    <TabItem FontSize="16" Header="U6#7 - TESTER VISION#2 Y"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
@@ -1767,6 +1767,709 @@
                                 </StackPanel>
                             </Button>
                             <!--<Button Grid.Row="4" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos3">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="5" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos4">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="6" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos5">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>-->
+
+
+
+                            <!--<Button Grid.Row="1" Grid.Column="7" Margin="3" x:Name="btLoadAx67Pos6">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="2" Grid.Column="7" Margin="3" x:Name="btLoadAx67Pos7">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Grid.Row="3" Grid.Column="7" Margin="3" x:Name="btLoadAx67Pos8">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="4" Grid.Column="7" Margin="3" x:Name="btLoadAx67Pos9">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="5" Grid.Column="7" Margin="3" x:Name="btLoadAx67Pos10">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>-->
+
+
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem FontSize="16" Header="U6#11 - TESTER VISION#2 Z"  Height="30">
+
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Button" BasedOn="{StaticResource ssButton}">
+                                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                                    <Setter Property="VerticalAlignment" Value="Stretch" />
+                                    <Setter Property="Background" Value="White" />
+                                    <Setter Property="Margin" Value="1,1,1,1" />
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="BorderBrush" Value="LightBlue"/>
+                                    <Setter Property="FontSize" Value="12" />
+                                </Style>
+
+                                <Style TargetType="{x:Type Label}">
+                                    <Setter Property="Foreground" Value="White" />
+                                    <Setter Property="Padding" Value="1,0" />
+                                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    <Setter Property="FontSize" Value="14" />
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="BorderBrush" Value="CadetBlue"/>
+                                    <Setter Property="Background" Value="CadetBlue"/>
+
+                                </Style>
+
+                                <Style TargetType="TextBox">
+                                    <Setter Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="Cyan"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    <Setter Property="FontSize" Value="20"/>
+                                    <Setter Property="Padding" Value="1,1,1,1"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.6*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="0.4*"/>
+                                <ColumnDefinition Width="1.4*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="0.4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Axis AX6#7 Position Name</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Position (mm)</Label>
+                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Speed (mm/s)</Label>
+                            <Label Grid.Column="3" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Load</Label>
+
+                            <Label Grid.Column="4" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Axis AX6#7 Position Name</Label>
+                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Position (mm)</Label>
+                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Speed (mm/s)</Label>
+                            <Label Grid.Column="7" Grid.Row="0"   BorderThickness="1" Margin="1" Padding="0">Load</Label>
+
+
+
+
+
+                            <local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="1"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="25100"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="19100"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="WAIT POS0"
+                                        TextON="WAIT POS0"
+                                        Content="WAIT POS0"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To Wait WAIT POS0"
+>
+                            </local:PLCButton>
+                            <local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="2"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="25101"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="19101"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="VISION #2 TRIGGER Z POS1"
+                                        TextON="VISION #2 TRIGGER Z"
+                                        Content="VISION #2 TRIGGER Z"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To VISION #2 TRIGGER Z"
+>
+                            </local:PLCButton>
+                            <!--<local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="3"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24702"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18702"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="RUN VISION#2 POS2"
+                                        TextON="RUN VISION#2 POS2"
+                                        Content="RUN VISION#2 POS2"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To RUN VISION#2 POS2"
+>
+                            </local:PLCButton>-->
+                            <!--<local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="4"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24703"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18703"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 03"
+                                        TextON="Data POS 03"
+                                        Content="Data POS 03"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 03"
+>
+                            </local:PLCButton>
+                            <local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="5"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24704"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18704"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 04"
+                                        TextON="Data POS 04"
+                                        Content="Data POS 04"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 04"
+>
+                            </local:PLCButton>
+
+
+                            <local:PLCButton
+                                        Grid.Column="0"
+                                        Grid.Row="6"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24705"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18705"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 05"
+                                        TextON="Data POS 05"
+                                        Content="Data POS 05"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 05"
+>
+                            </local:PLCButton>
+                            <local:PLCButton
+                                        Grid.Column="4"
+                                        Grid.Row="1"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24706"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18706"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 06"
+                                        TextON="Data POS 06"
+                                        Content="Data POS 06"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 06"
+>
+                            </local:PLCButton>
+
+                            <local:PLCButton
+                                        Grid.Column="4"
+                                        Grid.Row="2"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24707"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18707"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 07"
+                                        TextON="Data POS 07"
+                                        Content="Data POS 07"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 07"
+>
+                            </local:PLCButton>
+                            <local:PLCButton
+                                        Grid.Column="4"
+                                        Grid.Row="3"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24708"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18708"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 08"
+                                        TextON="Data POS 08"
+                                        Content="Data POS 08"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 08"
+>
+                            </local:PLCButton>
+
+                            <local:PLCButton
+                                        Grid.Column="4"
+                                        Grid.Row="4"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24709"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18709"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 09"
+                                        TextON="Data POS 09"
+                                        Content="Data POS 09"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 09"
+>
+                            </local:PLCButton>
+
+
+                            <local:PLCButton
+                                        Grid.Column="4"
+                                        Grid.Row="5"
+                                        Margin="1"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="24710"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="18710"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Data POS 10"
+                                        TextON="Data POS 10"
+                                        Content="Data POS 10"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Go To POS 10"
+>
+                            </local:PLCButton>-->
+
+
+
+                            <local:DataDWord_ZR
+                                      Grid.Row="1"
+                                      Grid.Column="1"
+                                      Margin="2"
+                                      IsTabItem="False" 
+                                      FontFamily="Arial" 
+                                      FontSize="20"
+                                      NoOfDecimalDigits="3" 
+                                      NoOfDisplay="4" 
+                                      Device="26000" 
+                                      IsReadOnly="False" 
+                                      Background="Black" 
+                                      Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+                                  Grid.Row="2"
+                                  Grid.Column="1"
+                                  Margin="2"
+                                  IsTabItem="False" 
+                                  FontFamily="Arial" 
+                                  FontSize="20"
+                                  NoOfDecimalDigits="3" 
+                                  NoOfDisplay="4" 
+                                  Device="26002" 
+                                  IsReadOnly="False" 
+                                  Background="Black" 
+                                  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <!--<local:DataDWord_ZR
+                                   Grid.Row="3"
+                                   Grid.Column="1"
+                                   Margin="2"
+                                   IsTabItem="False" 
+                                   FontFamily="Arial" 
+                                   FontSize="20"
+                                   NoOfDecimalDigits="3" 
+                                   NoOfDisplay="4" 
+                                   Device="25204" 
+                                   IsReadOnly="False" 
+                                   Background="Black" 
+                                   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+                                   Grid.Row="4"
+                                   Grid.Column="1"
+                                   Margin="2"
+                                   IsTabItem="False" 
+                                   FontFamily="Arial" 
+                                   FontSize="20"
+                                   NoOfDecimalDigits="3" 
+                                   NoOfDisplay="4" 
+                                   Device="25206" 
+                                   IsReadOnly="False" 
+                                   Background="Black" 
+                                   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+                                   Grid.Row="5"
+                                   Grid.Column="1"
+                                   Margin="2"
+                                   IsTabItem="False" 
+                                   FontFamily="Arial" 
+                                   FontSize="20"
+                                   NoOfDecimalDigits="3" 
+                                   NoOfDisplay="4" 
+                                   Device="25208" 
+                                   IsReadOnly="False" 
+                                   Background="Black" 
+                                   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                    Grid.Row="6"
+                                    Grid.Column="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Arial" 
+                                    FontSize="20"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="4" 
+                                    Device="25210" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+
+                            <local:DataDWord_ZR
+                                    Grid.Row="1"
+                                    Grid.Column="5"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Arial" 
+                                    FontSize="20"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="4" 
+                                    Device="25212" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                    Grid.Row="2"
+                                    Grid.Column="5"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Arial" 
+                                    FontSize="20"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="4" 
+                                    Device="25214" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                     Grid.Row="3"
+                                     Grid.Column="5"
+                                     Margin="2"
+                                     IsTabItem="False" 
+                                     FontFamily="Arial" 
+                                     FontSize="20"
+                                     NoOfDecimalDigits="3" 
+                                     NoOfDisplay="4" 
+                                     Device="25216" 
+                                     IsReadOnly="False" 
+                                     Background="Black" 
+                                     Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+                                      Grid.Row="4"
+                                      Grid.Column="5"
+                                      Margin="2"
+                                      IsTabItem="False" 
+                                      FontFamily="Arial" 
+                                      FontSize="20"
+                                      NoOfDecimalDigits="3" 
+                                      NoOfDisplay="4" 
+                                      Device="25218" 
+                                      IsReadOnly="False" 
+                                      Background="Black" 
+                                      Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+                                    Grid.Row="5"
+                                    Grid.Column="5"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Arial" 
+                                    FontSize="20"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="4" 
+                                    Device="25220" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+                            </local:DataDWord_ZR>-->
+
+
+
+
+
+
+                            <local:DataDWord_ZR
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Arial" 
+                                    FontSize="20"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="4" 
+                                    Device="36000" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                     Grid.Row="2"
+                                     Grid.Column="2"
+                                     Margin="2"
+                                     IsTabItem="False" 
+                                     FontFamily="Arial" 
+                                     FontSize="20"
+                                     NoOfDecimalDigits="3" 
+                                     NoOfDisplay="4" 
+                                     Device="36002" 
+                                     IsReadOnly="False" 
+                                     Background="Black" 
+                                     Foreground="Orange">
+                            </local:DataDWord_ZR>
+                            <!--<local:DataDWord_ZR
+                                     Grid.Row="3"
+                                     Grid.Column="2"
+                                     Margin="2"
+                                     IsTabItem="False" 
+                                     FontFamily="Arial" 
+                                     FontSize="20"
+                                     NoOfDecimalDigits="3" 
+                                     NoOfDisplay="4" 
+                                     Device="35204" 
+                                     IsReadOnly="False" 
+                                     Background="Black" 
+                                     Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                      Grid.Row="4"
+                                      Grid.Column="2"
+                                      Margin="2"
+                                      IsTabItem="False" 
+                                      FontFamily="Arial" 
+                                      FontSize="20"
+                                      NoOfDecimalDigits="3" 
+                                      NoOfDisplay="4" 
+                                      Device="35206" 
+                                      IsReadOnly="False" 
+                                      Background="Black" 
+                                      Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+
+                            <local:DataDWord_ZR
+                                      Grid.Row="5"
+                                      Grid.Column="2"
+                                      Margin="2"
+                                      IsTabItem="False" 
+                                      FontFamily="Arial" 
+                                      FontSize="20"
+                                      NoOfDecimalDigits="3" 
+                                      NoOfDisplay="4" 
+                                      Device="35208" 
+                                      IsReadOnly="False" 
+                                      Background="Black" 
+                                      Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                      Grid.Row="6"
+                                      Grid.Column="2"
+                                      Margin="2"
+                                      IsTabItem="False" 
+                                      FontFamily="Arial" 
+                                      FontSize="20"
+                                      NoOfDecimalDigits="3" 
+                                      NoOfDisplay="4" 
+                                      Device="35210" 
+                                      IsReadOnly="False" 
+                                      Background="Black" 
+                                      Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                       Grid.Row="1"
+                                       Grid.Column="6"
+                                       Margin="2"
+                                       IsTabItem="False" 
+                                       FontFamily="Arial" 
+                                       FontSize="20"
+                                       NoOfDecimalDigits="3" 
+                                       NoOfDisplay="4" 
+                                       Device="35212" 
+                                       IsReadOnly="False" 
+                                       Background="Black" 
+                                       Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                       Grid.Row="2"
+                                       Grid.Column="6"
+                                       Margin="2"
+                                       IsTabItem="False" 
+                                       FontFamily="Arial" 
+                                       FontSize="20"
+                                       NoOfDecimalDigits="3" 
+                                       NoOfDisplay="4" 
+                                       Device="35214" 
+                                       IsReadOnly="False" 
+                                       Background="Black" 
+                                       Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                        Grid.Row="3"
+                                        Grid.Column="6"
+                                        Margin="2"
+                                        IsTabItem="False" 
+                                        FontFamily="Arial" 
+                                        FontSize="20"
+                                        NoOfDecimalDigits="3" 
+                                        NoOfDisplay="4" 
+                                        Device="35216" 
+                                        IsReadOnly="False" 
+                                        Background="Black" 
+                                        Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                         Grid.Row="4"
+                                         Grid.Column="6"
+                                         Margin="2"
+                                         IsTabItem="False" 
+                                         FontFamily="Arial" 
+                                         FontSize="20"
+                                         NoOfDecimalDigits="3" 
+                                         NoOfDisplay="4" 
+                                         Device="35218" 
+                                         IsReadOnly="False" 
+                                         Background="Black" 
+                                         Foreground="Orange">
+                            </local:DataDWord_ZR>
+
+                            <local:DataDWord_ZR
+                                         Grid.Row="5"
+                                         Grid.Column="6"
+                                         Margin="2"
+                                         IsTabItem="False" 
+                                         FontFamily="Arial" 
+                                         FontSize="20"
+                                         NoOfDecimalDigits="3" 
+                                         NoOfDisplay="4" 
+                                         Device="35220" 
+                                         IsReadOnly="False" 
+                                         Background="Black" 
+                                         Foreground="Orange">
+                            </local:DataDWord_ZR>-->
+
+                            <Button Grid.Row="1" Grid.Column="3" Margin="3" x:Name="btLoadAx611Pos0">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="2" Grid.Column="3" Margin="3" x:Name="btLoadAx611Pos1">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <!--<Button Grid.Row="3" Grid.Column="3" Margin="3" x:Name="btLoadAx611Pos2">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/01.Image/save03.png" Margin="5"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Row="4" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos3">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>

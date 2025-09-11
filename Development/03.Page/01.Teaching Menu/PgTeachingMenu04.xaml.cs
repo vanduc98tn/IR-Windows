@@ -54,8 +54,37 @@ namespace Development
             //this.btLoadAx67Pos9.Click += BtLoadAx67Pos9_Click;
             //this.btLoadAx67Pos10.Click += BtLoadAx67Pos10_Click;
 
+            this.btLoadAx611Pos0.Click += BtLoadAx611Pos0_Click;
+            this.btLoadAx611Pos1.Click += BtLoadAx611Pos1_Click;
+
 
         }
+
+        private void BtLoadAx611Pos1_Click(object sender, RoutedEventArgs e)
+        {
+
+            WndComfirm comfirmYesNo = new WndComfirm();
+            if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 1")) return;
+            UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 1);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+
+        }
+        private void BtLoadAx611Pos0_Click(object sender, RoutedEventArgs e)
+        {
+
+            WndComfirm comfirmYesNo = new WndComfirm();
+            if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 0")) return;
+            UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 0);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+
+        }
+
         private void BtLoadAx67Pos10_Click(object sender, RoutedEventArgs e)
         {
 
