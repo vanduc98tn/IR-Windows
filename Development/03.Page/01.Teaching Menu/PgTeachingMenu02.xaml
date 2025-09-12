@@ -4383,7 +4383,7 @@
                     </Label.Effect> Manual
                 </Label>
             </Grid>
-            <Grid Grid.Row="5">
+            <!--<Grid Grid.Row="5">
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
@@ -5076,7 +5076,7 @@
 
                 </Grid>
 
-            </Grid>
+            </Grid>-->
         </Grid>
 
 
