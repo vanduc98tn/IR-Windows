@@ -56,6 +56,7 @@
                         <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#879ec8"/>
                         <Ellipse Margin="50 400 0 0" Width="40" Height="40" Fill="#879ec8"/>
 
+                        
                     </Canvas>
                     <StackPanel VerticalAlignment="Bottom">
                         <TextBlock Foreground="#879ec8" Text="ITM" Style="{StaticResource titleText}"/>
