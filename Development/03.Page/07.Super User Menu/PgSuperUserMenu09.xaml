@@ -389,7 +389,7 @@
                         NoOfDecimalDigits="3" 
                         NoOfDisplay="3" 
                         Device="5556" 
-                        IsReadOnly="False" 
+                        IsReadOnly="True" 
                         Background="Black" 
                         Foreground="White">
 
@@ -509,7 +509,7 @@
                         NoOfDecimalDigits="3" 
                         NoOfDisplay="3" 
                         Device="5558" 
-                        IsReadOnly="False" 
+                        IsReadOnly="True" 
                         Background="Black" 
                         Foreground="White">
 
@@ -643,7 +643,7 @@
                         NoOfDecimalDigits="3" 
                         NoOfDisplay="3" 
                         Device="5560" 
-                        IsReadOnly="False" 
+                        IsReadOnly="True" 
                         Background="Black" 
                         Foreground="White">
 
