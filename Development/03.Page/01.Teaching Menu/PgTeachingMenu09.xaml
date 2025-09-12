@@ -225,7 +225,7 @@
 
                 <TabControl  Grid.Row="0" FontSize="15" BorderThickness="1" FontFamily="Arial" FontWeight="SemiBold" Margin="4 0 0 2">
 
-                    <TabItem FontSize="16" Header="INPUT1 PLACE JIG" Height="30" >
+                    <TabItem FontSize="14" Header="INPUT1 PLACE JIG" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -1101,7 +1101,7 @@
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="INPUT2 PLACE JIG" Height="30" >
+                    <TabItem FontSize="14" Header="INPUT2 PLACE JIG" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -1981,7 +1981,7 @@
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="ROTARY VISION" Height="30" >
+                    <TabItem FontSize="14" Header="ROTARY VISION" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -2417,7 +2417,7 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="SPEC VISION INPUT"  Height="30">
+                    <TabItem FontSize="14" Header="SPEC VISION INPUT"  Height="30">
                         <Grid Grid.Row="1" Background="White">
                             <Grid.Resources>
                                 <Style TargetType="{x:Type Label}">
@@ -2604,7 +2604,7 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header=" INPUT PT BACKLASH"  Height="30">
+                    <TabItem FontSize="14" Header=" INPUT PT BACKLASH"  Height="30">
                         <Grid Grid.Row="1" Background="White">
                             <Grid.Resources>
                                 <Style TargetType="{x:Type Label}">
@@ -2904,311 +2904,12 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header=" OUTPUT PT BACKLASH"  Height="30">
-                        <Grid Grid.Row="1" Background="White">
-                            <Grid.Resources>
-                                <Style TargetType="{x:Type Label}">
-                                    <Setter Property="Foreground" Value="Black" />
-                                    <Setter Property="Padding" Value="0,0" />
-                                    <Setter Property="VerticalContentAlignment" Value="Center" />
-                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
-                                    <Setter Property="FontSize" Value="12" />
-                                    <Setter Property="FontFamily" Value="arial"/>
-                                    <Setter Property="Background" Value="White"/>
-                                    <Setter Property="FontWeight" Value="Normal" />
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="BorderBrush" Value="Black"/>
-                                </Style>
-
-                                <Style TargetType="{x:Type TextBlock}">
-                                    <Setter Property="Background" Value="White"/>
-                                    <Setter Property="Foreground" Value="Black"/>
-                                    <Setter Property="FontWeight" Value="Bold"/>
-                                    <Setter Property="FontSize" Value="20"/>
-                                    <Setter Property="Padding" Value="15,5,5,5"/>
-                                    <Setter Property="VerticalAlignment" Value="Center"/>
-
-
-                                </Style>
-                                <!--<Style TargetType="{x:Type TextBox}">
-    <Setter Property="VerticalAlignment" Value="Center"/>
-    <Setter Property="HorizontalAlignment" Value="Center"/>
-    <Setter Property="FontSize" Value="18" />
-    <Setter Property="BorderThickness" Value="2"/>
-    <Setter Property="FontFamily" Value="Playfair Display "/>
-    <Setter Property="FontWeight" Value="Bold" />
-    <Setter Property="Foreground" Value="Black"/>
-    <Setter Property="Padding" Value="30 0 30 0"/>
-
-</Style>-->
-                                <Style TargetType="TextBox">
-                                    <Setter Property="Background" Value="Black"/>
-                                    <Setter Property="Foreground" Value="Cyan"/>
-                                    <Setter Property="FontWeight" Value="Bold"/>
-                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
-                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
-                                    <Setter Property="FontSize" Value="20"/>
-                                    <Setter Property="Padding" Value="1,1,1,1"/>
-                                </Style>
-                            </Grid.Resources>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="277*"></ColumnDefinition>
-                                <ColumnDefinition Width="109*"></ColumnDefinition>
-                                <ColumnDefinition Width="4*"></ColumnDefinition>
-                                <ColumnDefinition Width="277*"></ColumnDefinition>
-                                <ColumnDefinition Width="109*"></ColumnDefinition>
-
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-
-
-                            </Grid.RowDefinitions>
-
-                            <Label Grid.Row="0"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="NAME"></Label>
-                            <Label Grid.Row="0"  Grid.Column="1" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="VALUE"></Label>
-
-                            <Label Grid.Row="1"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#13 OUTPUT1 PT TOOL #1"></Label>
-                            <Label Grid.Row="2"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#14 OUTPUT1 PT TOOL #2"></Label>
-                            <Label Grid.Row="3"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#15 OUTPUT1 PT TOOL #3"></Label>
-                            <Label Grid.Row="4"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#16 OUTPUT1 PT TOOL #4"></Label>
-                            <Label Grid.Row="5"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#1 OUTPUT1 PT TOOL #5"></Label>
-                            <Label Grid.Row="6"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#2 OUTPUT1 PT TOOL #6"></Label>
-
-                            <Label Grid.Row="0"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="NAME"></Label>
-                            <Label Grid.Row="0"  Grid.Column="4" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="VALUE"></Label>
-
-                            <Label Grid.Row="1"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#3 OUTPUT2 PT TOOL #1"></Label>
-                            <Label Grid.Row="2"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#4 OUTPUT2 PT TOOL #2"></Label>
-                            <Label Grid.Row="3"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#5 OUTPUT2 PT TOOL #3"></Label>
-                            <Label Grid.Row="4"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#6 OUTPUT2 PT TOOL #4"></Label>
-                            <Label Grid.Row="5"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#7 OUTPUT2 PT TOOL #5"></Label>
-                            <Label Grid.Row="6"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#8 OUTPUT2 PT TOOL #6"></Label>
-
-
-
-                            <Grid Grid.Row="1" Grid.Column="1">
-                                <local:DataDWord_D
-                        Margin="2,2,2,2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="3426" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan"/>
-                            </Grid>
-                            <Grid Grid.Row="2" Grid.Column="1">
-                                <local:DataDWord_D
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="3428" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-
-                            <Grid Grid.Row="3" Grid.Column="1">
-                                <local:DataDWord_D
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="3430" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="4" Grid.Column="1">
-                                <local:DataDWord_D
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="3432" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="5" Grid.Column="1">
-                                <local:DataDWord_D
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="4402" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="6" Grid.Column="1">
-                                <local:DataDWord_D
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="2"
-                        IsTabItem="False" 
-                        FontFamily="Agency FB" 
-                        FontSize="25"
-                        NoOfDecimalDigits="3" 
-                        NoOfDisplay="2" 
-                        Device="4404" 
-                        IsReadOnly="False" 
-                        Background="Black" 
-                        Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-
-
-
-                            <!--//-->
-
-
-                            <Grid Grid.Row="1" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Margin="2,2,2,2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4406" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan"/>
-                            </Grid>
-                            <Grid Grid.Row="2" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Margin="2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4408" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-
-                            <Grid Grid.Row="3" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Margin="2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4410" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="4" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Margin="2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4412" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="5" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Margin="2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4414" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-                            <Grid Grid.Row="6" Grid.Column="4">
-                                <local:DataDWord_D
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Margin="2"
-                                    IsTabItem="False" 
-                                    FontFamily="Agency FB" 
-                                    FontSize="25"
-                                    NoOfDecimalDigits="3" 
-                                    NoOfDisplay="2" 
-                                    Device="4416" 
-                                    IsReadOnly="False" 
-                                    Background="Black" 
-                                    Foreground="Cyan">
-
-                                </local:DataDWord_D>
-                            </Grid>
-
-
-
-                        </Grid>
-                    </TabItem>
+                    
 
                 </TabControl>
                 <TabControl  Grid.Row="1" FontSize="15" BorderThickness="1" FontFamily="Arial" FontWeight="SemiBold" Margin="4 0 0 2">
 
-                    <TabItem FontSize="16" Header="OUTPUT1 PICKUP JIG" Height="30" >
+                    <TabItem FontSize="14" Header="OUT1 PICKUP JIG" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -3552,7 +3253,7 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="OUTPUT1 PLACE TAPING" Height="30" >
+                    <TabItem FontSize="14" Header="OUT1 PLACE TAPING" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -3854,7 +3555,7 @@ Foreground="Cyan">
                             </local:DataDWord_ZR>
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="OUTPUT2 PICKUP JIG" Height="30" >
+                    <TabItem FontSize="14" Header="OUT2 PICKUP JIG" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -4198,7 +3899,7 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="OUTPUT2 PLACE TAPING" Height="30" >
+                    <TabItem FontSize="14" Header="OUT2 PLACE TAPING" Height="30" >
 
                         <Grid>
                             <Grid.Resources>
@@ -4497,7 +4198,7 @@ Foreground="Cyan">
                             </local:DataDWord_ZR>
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="SPEC VISION OUTPUT"  Height="30">
+                    <TabItem FontSize="14" Header="SPEC VISION OUTPUT"  Height="30">
                         <Grid Grid.Row="1" Background="White">
                             <Grid.Resources>
                                 <Style TargetType="{x:Type Label}">
@@ -4684,7 +4385,307 @@ Foreground="Cyan">
 
                         </Grid>
                     </TabItem>
-                    
+                    <TabItem FontSize="14" Header=" OUTPUT PT BACKLASH"  Height="30">
+                        <Grid Grid.Row="1" Background="White">
+                            <Grid.Resources>
+                                <Style TargetType="{x:Type Label}">
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="Padding" Value="0,0" />
+                                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    <Setter Property="FontSize" Value="12" />
+                                    <Setter Property="FontFamily" Value="arial"/>
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="FontWeight" Value="Normal" />
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="BorderBrush" Value="Black"/>
+                                </Style>
+
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="FontSize" Value="20"/>
+                                    <Setter Property="Padding" Value="15,5,5,5"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+
+
+                                </Style>
+                                <!--<Style TargetType="{x:Type TextBox}">
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="HorizontalAlignment" Value="Center"/>
+    <Setter Property="FontSize" Value="18" />
+    <Setter Property="BorderThickness" Value="2"/>
+    <Setter Property="FontFamily" Value="Playfair Display "/>
+    <Setter Property="FontWeight" Value="Bold" />
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="Padding" Value="30 0 30 0"/>
+
+</Style>-->
+                                <Style TargetType="TextBox">
+                                    <Setter Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="Cyan"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    <Setter Property="FontSize" Value="20"/>
+                                    <Setter Property="Padding" Value="1,1,1,1"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="277*"></ColumnDefinition>
+                                <ColumnDefinition Width="109*"></ColumnDefinition>
+                                <ColumnDefinition Width="4*"></ColumnDefinition>
+                                <ColumnDefinition Width="277*"></ColumnDefinition>
+                                <ColumnDefinition Width="109*"></ColumnDefinition>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+
+
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="NAME"></Label>
+                            <Label Grid.Row="0"  Grid.Column="1" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="VALUE"></Label>
+
+                            <Label Grid.Row="1"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#13 OUTPUT1 PT TOOL #1"></Label>
+                            <Label Grid.Row="2"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#14 OUTPUT1 PT TOOL #2"></Label>
+                            <Label Grid.Row="3"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#15 OUTPUT1 PT TOOL #3"></Label>
+                            <Label Grid.Row="4"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U2#16 OUTPUT1 PT TOOL #4"></Label>
+                            <Label Grid.Row="5"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#1 OUTPUT1 PT TOOL #5"></Label>
+                            <Label Grid.Row="6"  Grid.Column="0" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#2 OUTPUT1 PT TOOL #6"></Label>
+
+                            <Label Grid.Row="0"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="NAME"></Label>
+                            <Label Grid.Row="0"  Grid.Column="4" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Center" Background="LightGray" Content="VALUE"></Label>
+
+                            <Label Grid.Row="1"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#3 OUTPUT2 PT TOOL #1"></Label>
+                            <Label Grid.Row="2"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#4 OUTPUT2 PT TOOL #2"></Label>
+                            <Label Grid.Row="3"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#5 OUTPUT2 PT TOOL #3"></Label>
+                            <Label Grid.Row="4"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#6 OUTPUT2 PT TOOL #4"></Label>
+                            <Label Grid.Row="5"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#7 OUTPUT2 PT TOOL #5"></Label>
+                            <Label Grid.Row="6"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="U4#8 OUTPUT2 PT TOOL #6"></Label>
+
+
+
+                            <Grid Grid.Row="1" Grid.Column="1">
+                                <local:DataDWord_D
+                        Margin="2,2,2,2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="3426" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan"/>
+                            </Grid>
+                            <Grid Grid.Row="2" Grid.Column="1">
+                                <local:DataDWord_D
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="3428" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+
+                            <Grid Grid.Row="3" Grid.Column="1">
+                                <local:DataDWord_D
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="3430" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="4" Grid.Column="1">
+                                <local:DataDWord_D
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="3432" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="5" Grid.Column="1">
+                                <local:DataDWord_D
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="4402" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="6" Grid.Column="1">
+                                <local:DataDWord_D
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="2"
+                        IsTabItem="False" 
+                        FontFamily="Agency FB" 
+                        FontSize="25"
+                        NoOfDecimalDigits="3" 
+                        NoOfDisplay="2" 
+                        Device="4404" 
+                        IsReadOnly="False" 
+                        Background="Black" 
+                        Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+
+
+
+                            <!--//-->
+
+
+                            <Grid Grid.Row="1" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Margin="2,2,2,2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4406" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan"/>
+                            </Grid>
+                            <Grid Grid.Row="2" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4408" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+
+                            <Grid Grid.Row="3" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4410" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="4" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4412" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="5" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4414" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+                            <Grid Grid.Row="6" Grid.Column="4">
+                                <local:DataDWord_D
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Margin="2"
+                                    IsTabItem="False" 
+                                    FontFamily="Agency FB" 
+                                    FontSize="25"
+                                    NoOfDecimalDigits="3" 
+                                    NoOfDisplay="2" 
+                                    Device="4416" 
+                                    IsReadOnly="False" 
+                                    Background="Black" 
+                                    Foreground="Cyan">
+
+                                </local:DataDWord_D>
+                            </Grid>
+
+
+
+                        </Grid>
+                    </TabItem>
+
 
                 </TabControl>
 
