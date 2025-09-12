@@ -2407,7 +2407,7 @@
                                   FontSize="20"
                                   NoOfDecimalDigits="3" 
                                   NoOfDisplay="4" 
-                                  Device="26002" 
+                                  Device="26050" 
                                   IsReadOnly="False" 
                                   Background="Black" 
                                   Foreground="Cyan">
