@@ -534,7 +534,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid Grid.Row="0">
                                     <Grid Grid.Row="0" Grid.Column="0">
-                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#6 - INPUT VISION#1</Label>
+                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#6 - INPUT VISION #1</Label>
                                     </Grid>
                                 </Grid>
                                 <Grid Grid.Row="1">
@@ -1519,7 +1519,7 @@
                         </Grid>
                     </TabItem>
 
-                    <TabItem FontSize="16" Header="U6#6 - INPUT VISION#1"  Height="30">
+                    <TabItem FontSize="16" Header="U6#6 - INPUT VISION #1"  Height="30">
 
                         <Grid>
                             <Grid.Resources>

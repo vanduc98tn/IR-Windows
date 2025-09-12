@@ -1073,7 +1073,7 @@
             <Grid Grid.Row="3">
                 <TabControl  Grid.Column="0" FontSize="15" BorderThickness="1" FontFamily="Arial" FontWeight="SemiBold" Margin="4 0 0 2">
 
-                    <TabItem FontSize="16" Header="U6#8 - OUTPUT VISION#3"  Height="30">
+                    <TabItem FontSize="16" Header="U6#8 - OUTPUT VISION #3"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
