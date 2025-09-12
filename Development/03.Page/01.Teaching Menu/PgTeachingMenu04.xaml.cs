@@ -56,10 +56,23 @@ namespace Development
 
             this.btLoadAx611Pos0.Click += BtLoadAx611Pos0_Click;
             this.btLoadAx611Pos1.Click += BtLoadAx611Pos1_Click;
+            this.btLoadAx611Pos2.Click += BtLoadAx611Pos2_Click;
 
 
         }
 
+        private void BtLoadAx611Pos2_Click(object sender, RoutedEventArgs e)
+        {
+
+            WndComfirm comfirmYesNo = new WndComfirm();
+            if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 2")) return;
+            UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 2);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            Thread.Sleep(10);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+
+        }
         private void BtLoadAx611Pos1_Click(object sender, RoutedEventArgs e)
         {
 

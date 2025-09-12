@@ -1372,7 +1372,7 @@
                         </Grid>
                     </TabItem>
 
-                    <TabItem FontSize="16" Header="U6#7 - TESTER VISION#2 Y"  Height="30">
+                    <TabItem FontSize="16" Header="U6#7 - ROTARY VISION #2 Y"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
@@ -2075,7 +2075,7 @@
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="U6#11 - TESTER VISION#2 Z"  Height="30">
+                    <TabItem FontSize="16" Header="U6#11 - ROTARY VISION #2 Z"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
@@ -2186,27 +2186,27 @@
                                         IsMesComfrim="Confrim Go To VISION #2 TRIGGER Z"
 >
                             </local:PLCButton>
-                            <!--<local:PLCButton
+                            <local:PLCButton
                                         Grid.Column="0"
                                         Grid.Row="3"
                                         Margin="1"
                                         Action="Momentary"
                                         IsTabItem="False"
-                                        DeviceWrite="L" AddressWrite="24702"
+                                        DeviceWrite="L" AddressWrite="25102"
                                         UseLampCodition="True"
-                                        DeviceLamp="L" AddressLamp="18702"
+                                        DeviceLamp="L" AddressLamp="19102"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="RUN VISION#2 POS2"
-                                        TextON="RUN VISION#2 POS2"
-                                        Content="RUN VISION#2 POS2"
+                                        TextOFF="SPARE POS2"
+                                        TextON="SPARE POS2"
+                                        Content="SPARE POS2"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="16"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To RUN VISION#2 POS2"
+                                        IsMesComfrim="Confrim Go To SPARE POS2"
 >
-                            </local:PLCButton>-->
+                            </local:PLCButton>
                             <!--<local:PLCButton
                                         Grid.Column="0"
                                         Grid.Row="4"
@@ -2412,7 +2412,7 @@
                                   Background="Black" 
                                   Foreground="Cyan">
                             </local:DataDWord_ZR>
-                            <!--<local:DataDWord_ZR
+                            <local:DataDWord_ZR
                                    Grid.Row="3"
                                    Grid.Column="1"
                                    Margin="2"
@@ -2421,12 +2421,12 @@
                                    FontSize="20"
                                    NoOfDecimalDigits="3" 
                                    NoOfDisplay="4" 
-                                   Device="25204" 
+                                   Device="26004" 
                                    IsReadOnly="False" 
                                    Background="Black" 
                                    Foreground="Cyan">
                             </local:DataDWord_ZR>
-                            <local:DataDWord_ZR
+                            <!--<<local:DataDWord_ZR
                                    Grid.Row="4"
                                    Grid.Column="1"
                                    Margin="2"
@@ -2578,7 +2578,7 @@
                                      Background="Black" 
                                      Foreground="Orange">
                             </local:DataDWord_ZR>
-                            <!--<local:DataDWord_ZR
+                            <local:DataDWord_ZR
                                      Grid.Row="3"
                                      Grid.Column="2"
                                      Margin="2"
@@ -2587,13 +2587,13 @@
                                      FontSize="20"
                                      NoOfDecimalDigits="3" 
                                      NoOfDisplay="4" 
-                                     Device="35204" 
+                                     Device="36004" 
                                      IsReadOnly="False" 
                                      Background="Black" 
                                      Foreground="Orange">
                             </local:DataDWord_ZR>
 
-                            <local:DataDWord_ZR
+                            <!--<local:DataDWord_ZR
                                       Grid.Row="4"
                                       Grid.Column="2"
                                       Margin="2"
@@ -2724,12 +2724,12 @@
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
                             </Button>
-                            <!--<Button Grid.Row="3" Grid.Column="3" Margin="3" x:Name="btLoadAx611Pos2">
+                            <Button Grid.Row="3" Grid.Column="3" Margin="3" x:Name="btLoadAx611Pos2">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
                             </Button>
-                            <Button Grid.Row="4" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos3">
+                            <!--<Button Grid.Row="4" Grid.Column="3" Margin="3" x:Name="btLoadAx67Pos3">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
