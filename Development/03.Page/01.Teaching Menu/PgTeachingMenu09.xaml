@@ -1981,6 +1981,442 @@
 
                         </Grid>
                     </TabItem>
+                    <TabItem FontSize="16" Header="ROTARY VISION" Height="30" >
+
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Button" BasedOn="{StaticResource ssButton}">
+                                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                                    <Setter Property="VerticalAlignment" Value="Stretch" />
+                                    <Setter Property="Background" Value="White" />
+                                    <Setter Property="Margin" Value="1,1,1,1" />
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="BorderBrush" Value="LightBlue"/>
+                                    <Setter Property="FontSize" Value="12" />
+                                </Style>
+
+                                <Style TargetType="{x:Type Label}">
+                                    <Setter Property="Foreground" Value="White" />
+                                    <Setter Property="Padding" Value="1,0" />
+                                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    <Setter Property="FontSize" Value="14" />
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="BorderBrush" Value="CadetBlue"/>
+                                    <Setter Property="Background" Value="CadetBlue"/>
+
+                                </Style>
+
+                                <Style TargetType="TextBox">
+                                    <Setter Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="Cyan"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    <Setter Property="FontSize" Value="20"/>
+                                    <Setter Property="Padding" Value="1,1,1,1"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                                <ColumnDefinition Width="139*"/>
+                            </Grid.ColumnDefinitions>
+
+
+
+
+
+
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 Z</Label>
+
+                            <Label Grid.Column="2" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 Z</Label>
+
+                            <Label Grid.Column="3" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 Z</Label>
+
+                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 Z</Label>
+
+
+                            <Label Grid.Column="0" Grid.Row="1"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #1</Label>
+                            <Label Grid.Column="0" Grid.Row="2"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #2</Label>
+                            <Label Grid.Column="0" Grid.Row="3"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #3</Label>
+                            <Label Grid.Column="0" Grid.Row="4"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #4</Label>
+                            <Label Grid.Column="0" Grid.Row="5"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #5</Label>
+                            <Label Grid.Column="0" Grid.Row="6"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #6</Label>
+                            <!--////#1-->
+                            <local:DataDWord_ZR
+    Grid.Row="1"
+    Grid.Column="1"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1500" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+     Grid.Row="2"
+     Grid.Column="1"
+     Margin="2,2,2,2"
+     IsTabItem="False" 
+     FontFamily="Arial" 
+     FontSize="20"
+     NoOfDecimalDigits="3" 
+     NoOfDisplay="1" 
+     Device="1502" 
+     IsReadOnly="False" 
+     Background="Black" 
+     Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+  Grid.Row="3"
+  Grid.Column="1"
+  Margin="2,2,2,2"
+  IsTabItem="False" 
+  FontFamily="Arial" 
+  FontSize="20"
+  NoOfDecimalDigits="3" 
+  NoOfDisplay="1" 
+  Device="1504" 
+  IsReadOnly="False" 
+  Background="Black" 
+  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+ Grid.Row="4"
+ Grid.Column="1"
+ Margin="2,2,2,2"
+ IsTabItem="False" 
+ FontFamily="Arial" 
+ FontSize="20"
+ NoOfDecimalDigits="3" 
+ NoOfDisplay="1" 
+ Device="1506" 
+ IsReadOnly="False" 
+ Background="Black" 
+ Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+Grid.Row="5"
+Grid.Column="1"
+Margin="2,2,2,2"
+IsTabItem="False" 
+FontFamily="Arial" 
+FontSize="20"
+NoOfDecimalDigits="3" 
+NoOfDisplay="1" 
+Device="1508" 
+IsReadOnly="False" 
+Background="Black" 
+Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+  Grid.Row="6"
+  Grid.Column="1"
+  Margin="2,2,2,2"
+  IsTabItem="False" 
+  FontFamily="Arial" 
+  FontSize="20"
+  NoOfDecimalDigits="3" 
+  NoOfDisplay="1" 
+  Device="1510" 
+  IsReadOnly="False" 
+  Background="Black" 
+  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+
+
+
+
+
+                            <!--#2-->
+                            <local:DataDWord_ZR
+      Grid.Row="1"
+      Grid.Column="2"
+      Margin="2,2,2,2"
+      IsTabItem="False" 
+      FontFamily="Arial" 
+      FontSize="20"
+      NoOfDecimalDigits="3" 
+      NoOfDisplay="1" 
+      Device="1520" 
+      IsReadOnly="False" 
+      Background="Black" 
+      Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+   Grid.Row="2"
+   Grid.Column="2"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1522" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="3"
+    Grid.Column="2"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1524" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+   Grid.Row="4"
+   Grid.Column="2"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1526" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+  Grid.Row="5"
+  Grid.Column="2"
+  Margin="2,2,2,2"
+  IsTabItem="False" 
+  FontFamily="Arial" 
+  FontSize="20"
+  NoOfDecimalDigits="3" 
+  NoOfDisplay="1" 
+  Device="1528" 
+  IsReadOnly="False" 
+  Background="Black" 
+  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="6"
+    Grid.Column="2"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1530" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+
+
+
+                            <!--#3-->
+                            <local:DataDWord_ZR
+  Grid.Row="1"
+  Grid.Column="3"
+  Margin="2,2,2,2"
+  IsTabItem="False" 
+  FontFamily="Arial" 
+  FontSize="20"
+  NoOfDecimalDigits="3" 
+  NoOfDisplay="1" 
+  Device="1540" 
+  IsReadOnly="False" 
+  Background="Black" 
+  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+   Grid.Row="2"
+   Grid.Column="3"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1542" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="3"
+    Grid.Column="3"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1544" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+   Grid.Row="4"
+   Grid.Column="3"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1546" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+  Grid.Row="5"
+  Grid.Column="3"
+  Margin="2,2,2,2"
+  IsTabItem="False" 
+  FontFamily="Arial" 
+  FontSize="20"
+  NoOfDecimalDigits="3" 
+  NoOfDisplay="1" 
+  Device="1548" 
+  IsReadOnly="False" 
+  Background="Black" 
+  Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="6"
+    Grid.Column="3"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1550" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+
+
+
+                            <!--#4-->
+                            <local:DataDWord_ZR
+   Grid.Row="1"
+   Grid.Column="4"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1560" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="2"
+    Grid.Column="4"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1562" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+     Grid.Row="3"
+     Grid.Column="4"
+     Margin="2,2,2,2"
+     IsTabItem="False" 
+     FontFamily="Arial" 
+     FontSize="20"
+     NoOfDecimalDigits="3" 
+     NoOfDisplay="1" 
+     Device="1564" 
+     IsReadOnly="False" 
+     Background="Black" 
+     Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+    Grid.Row="4"
+    Grid.Column="4"
+    Margin="2,2,2,2"
+    IsTabItem="False" 
+    FontFamily="Arial" 
+    FontSize="20"
+    NoOfDecimalDigits="3" 
+    NoOfDisplay="1" 
+    Device="1566" 
+    IsReadOnly="False" 
+    Background="Black" 
+    Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+   Grid.Row="5"
+   Grid.Column="4"
+   Margin="2,2,2,2"
+   IsTabItem="False" 
+   FontFamily="Arial" 
+   FontSize="20"
+   NoOfDecimalDigits="3" 
+   NoOfDisplay="1" 
+   Device="1568" 
+   IsReadOnly="False" 
+   Background="Black" 
+   Foreground="Cyan">
+                            </local:DataDWord_ZR>
+                            <local:DataDWord_ZR
+ Grid.Row="6"
+ Grid.Column="4"
+ Margin="2,2,2,2"
+ IsTabItem="False" 
+ FontFamily="Arial" 
+ FontSize="20"
+ NoOfDecimalDigits="3" 
+ NoOfDisplay="1" 
+ Device="1570" 
+ IsReadOnly="False" 
+ Background="Black" 
+ Foreground="Cyan">
+                            </local:DataDWord_ZR>
+
+
+
+                        </Grid>
+                    </TabItem>
                     <TabItem FontSize="16" Header="SPEC VISION INPUT"  Height="30">
                         <Grid Grid.Row="1" Background="White">
                             <Grid.Resources>
