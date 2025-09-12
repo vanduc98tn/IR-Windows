@@ -2176,14 +2176,14 @@
                                         DeviceLamp="L" AddressLamp="19101"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="VISION #2 TRIGGER Z POS1"
-                                        TextON="VISION #2 TRIGGER Z"
-                                        Content="VISION #2 TRIGGER Z"
+                                        TextOFF="TRIGGER Z POS1"
+                                        TextON="TRIGGER Z POS1"
+                                        Content="TRIGGER Z POS1"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="16"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To VISION #2 TRIGGER Z"
+                                        IsMesComfrim="Confrim Go To TRIGGER Z POS1"
 >
                             </local:PLCButton>
                             <local:PLCButton
