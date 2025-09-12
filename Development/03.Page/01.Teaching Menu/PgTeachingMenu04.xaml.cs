@@ -68,9 +68,9 @@ namespace Development
             if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 2")) return;
             UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 2);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, true);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, false);
 
         }
         private void BtLoadAx611Pos1_Click(object sender, RoutedEventArgs e)
@@ -80,9 +80,9 @@ namespace Development
             if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 1")) return;
             UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 1);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, true);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, false);
 
         }
         private void BtLoadAx611Pos0_Click(object sender, RoutedEventArgs e)
@@ -92,9 +92,9 @@ namespace Development
             if (!comfirmYesNo.DoComfirmYesNo($"Confrim Save Data Pos 0")) return;
             UiManager.Instance.PLC.device.WriteWord(DeviceCode.ZR, 26198, 0);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, true);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, true);
             Thread.Sleep(10);
-            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25099, false);
+            UiManager.Instance.PLC.device.WriteBit(DeviceCode.L, 25199, false);
 
         }
 
