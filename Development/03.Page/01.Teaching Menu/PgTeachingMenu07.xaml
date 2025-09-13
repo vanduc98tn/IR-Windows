@@ -536,7 +536,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid Grid.Row="0">
                                     <Grid Grid.Row="0" Grid.Column="0">
-                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#9 - TAPPING STEP</Label>
+                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#9 - TAPING STEP</Label>
                                     </Grid>
                                 </Grid>
                                 <Grid Grid.Row="1">
@@ -796,7 +796,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid Grid.Row="0">
                                     <Grid Grid.Row="0" Grid.Column="0">
-                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#10 - TAPPING SPEED</Label>
+                                        <Label BorderThickness="1" Background="#333333" Foreground="White" BorderBrush="CadetBlue"  Margin="1">U6#10 - TAPING SPEED</Label>
                                     </Grid>
                                 </Grid>
                                 <Grid Grid.Row="1">
@@ -1776,7 +1776,7 @@
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="U6#9 - TAPPING STEP"  Height="30">
+                    <TabItem FontSize="16" Header="U6#9 - TAPING STEP"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
@@ -2220,7 +2220,7 @@
 
                         </Grid>
                     </TabItem>
-                    <TabItem FontSize="16" Header="U6#10 - TAPPING SPEED"  Height="30">
+                    <TabItem FontSize="16" Header="U6#10 - TAPING SPEED"  Height="30">
 
                         <Grid>
                             <Grid.Resources>
