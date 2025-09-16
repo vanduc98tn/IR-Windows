@@ -655,6 +655,51 @@
                             </local:PLCButton>
                         </Grid>
 
+                        <Grid></Grid>
+                        
+                        <Grid>
+                            <local:PLCButton
+                                            Grid.Column="0"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="555"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10555"
+                                            BackgroundLampOFF="Transparent"
+                                            BackgroundLampON="Red"
+                                            TextOFF="Enable Sealing Tape Detect"
+                                            TextON="Disable Sealing Tape Detect"
+                                            Content="Taping Detect"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                           
+>
+                            </local:PLCButton>
+                        </Grid>
+                        <Grid>
+                            <local:PLCButton
+                                            Grid.Column="0"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="556"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10556"
+                                            BackgroundLampOFF="Transparent"
+                                            BackgroundLampON="Red"
+                                            TextOFF="Enable Carrier Tape Detect"
+                                            TextON="Disable Carrier Tape Detect"
+                                            Content="Taping Detect"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                           
+>
+                            </local:PLCButton>
+                        </Grid>
+
                     </UniformGrid>
 
                     <UniformGrid Grid.Column="4" Columns="1" Rows="10" Margin="0 0 10 0">
@@ -783,8 +828,8 @@
                                             DeviceLamp="L" AddressLamp="10551"
                                             BackgroundLampOFF="Transparent"
                                             BackgroundLampON="Red"
-                                            TextOFF="Enable Taping Detect"
-                                            TextON="Disable Taping Detect"
+                                            TextOFF="Enable Taping IR Detect"
+                                            TextON="Disable Taping IR Detect"
                                             Content="Taping Detect"
                                             Background="Transparent"
                                             Foreground="Black"
