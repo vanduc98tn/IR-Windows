@@ -96,22 +96,8 @@ namespace Development
 
             this.RegisterDataTester();
             this.ThreadUpDatePLC();
-            this.ThreadUpDateUI();
-
-
         }
-        private void ThreadUpDateUI()
-        {
-            new Thread(new ThreadStart(this.UpdateUI_Lamp))
-            {
-                IsBackground = true
-            }.Start();
-
-            new Thread(new ThreadStart(this.UpdateUI_Devices))
-            {
-                IsBackground = true
-            }.Start();
-        }
+       
         private void ThreadUpDatePLC()
         {
             new Thread(new ThreadStart(this.ReadPLC))
@@ -129,14 +115,14 @@ namespace Development
                     UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 700, out this.D_ListShortDevicePLC_0);
                     UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.M, 0, 700, out this.M_ListBitPLC0_);
                     UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.L, 10000, 20, out this.L_ListBitPLC10000_);
-
                     UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
 
-
-                    this.UpdateError();        
+                    this.UpdateError();
+                    this.UpdateUI_Devices();
+                    this.UpdateUI_Lamp();
                 }
-               
-                Task.Delay(5);
+
+                Thread.Sleep(5);
             }
         }
        
@@ -623,68 +609,78 @@ namespace Development
         }
         private void UpdateUI_Lamp()
         {
-            
-            while (this.isUpdate)
+            try
             {
-                try
-                {
 
-                    base.Dispatcher.Invoke(delegate ()
+                while (this.isUpdate)
+                {
+                    if (UiManager.Instance.PLC.device.isOpen())
                     {
-                        this.btStart.Background = L_ListBitPLC10000_[2] ? LAMP_GREEN : LAMP_OFF;
-                        this.btStop.Background = L_ListBitPLC10000_[3] ? LAMP_RED : LAMP_OFF;
-                        this.btReset.Background = L_ListBitPLC10000_[7] ? LAMP_YELLOW : LAMP_OFF;
-                        this.btHome.Background = L_ListBitPLC10000_[5] ? LAMP_ORANGE : LAMP_OFF;
-                        this.btLotEnd.Background = L_ListBitPLC10000_[6] ? LAMP_BROWN : LAMP_OFF;
 
-                    });
+                        if (L_ListBitPLC10000_.Count >= 1)
+                        {
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                this.btStart.Background = L_ListBitPLC10000_[2] ? LAMP_GREEN : LAMP_OFF;
+                                this.btStop.Background = L_ListBitPLC10000_[3] ? LAMP_RED : LAMP_OFF;
+                                this.btReset.Background = L_ListBitPLC10000_[7] ? LAMP_YELLOW : LAMP_OFF;
+                                this.btHome.Background = L_ListBitPLC10000_[5] ? LAMP_ORANGE : LAMP_OFF;
+                                this.btLotEnd.Background = L_ListBitPLC10000_[6] ? LAMP_BROWN : LAMP_OFF;
+                            });
+                        }
 
 
+                    }
 
                 }
-                catch (Exception ex)
-                {
-                    //this.logger.Create("Update Status PLC Error: " + ex.Message, LogLevel.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                //this.logger.Create("Update Status PLC Error: " + ex.Message, LogLevel.Error);
             }
 
 
         }
         private void UpdateUI_Devices()
         {
-
-            while (this.isUpdate)
+            try
             {
-                try
+                while (this.isUpdate)
                 {
-
-                    base.Dispatcher.Invoke(delegate ()
+                    if (UiManager.Instance.PLC.device.isOpen())
                     {
-                        this.lbCoutter1.Content = D_ListDoubleDevicePLC_0[20].ToString();
-                        this.lbCoutter2.Content = D_ListDoubleDevicePLC_0[22].ToString();
-                        this.lbCoutter3.Content = D_ListDoubleDevicePLC_0[24].ToString();
-                        this.lbCoutter4.Content = D_ListDoubleDevicePLC_0[26].ToString();
 
-                        this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0[30].ToString();
-                        this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0[32].ToString();
-                        this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0[34].ToString();
+                        if (D_ListDoubleDevicePLC_0.Count >= 1)
+                        {
+                            Dispatcher.Invoke(() =>
+                            {
+                                this.lbCoutter1.Content = D_ListDoubleDevicePLC_0[20].ToString();
+                                this.lbCoutter2.Content = D_ListDoubleDevicePLC_0[22].ToString();
+                                this.lbCoutter3.Content = D_ListDoubleDevicePLC_0[24].ToString();
+                                this.lbCoutter4.Content = D_ListDoubleDevicePLC_0[26].ToString();
 
-                        this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0[60].ToString();
-                        this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0[62].ToString();
+                                this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0[30].ToString();
+                                this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0[32].ToString();
+                                this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0[34].ToString();
+
+                                this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0[60].ToString();
+                                this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0[62].ToString();
 
 
-                        this.lbTimer1.Content = (D_ListDoubleDevicePLC_0[50]/1000.0).ToString();
+                                this.lbTimer1.Content = (D_ListDoubleDevicePLC_0[50] / 1000.0).ToString();
 
 
-                    });
+                            });
+                        }
 
-
+                    }
 
                 }
-                catch (Exception ex)
-                {
-                    //this.logger.Create("Update Status PLC Error: " + ex.Message, LogLevel.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                //this.logger.Create("Update Status PLC Error: " + ex.Message, LogLevel.Error);
             }
 
 

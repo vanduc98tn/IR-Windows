@@ -357,10 +357,6 @@ namespace Development
            
         }
         #endregion
-
-   
-
-
         #region Tester COM
         private void LoadNotifyTester()
         {
