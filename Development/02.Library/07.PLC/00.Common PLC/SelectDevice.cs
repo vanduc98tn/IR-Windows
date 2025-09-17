@@ -267,7 +267,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -405,7 +405,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -551,7 +551,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -690,7 +690,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -840,7 +840,7 @@ namespace Development
                             continue;
                         }
                         //break;
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -994,7 +994,7 @@ namespace Development
                             continue;
                         }
                         //break;
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -1142,7 +1142,7 @@ namespace Development
                             continue;
                         }
                         //break;
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -1289,7 +1289,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)
@@ -1453,7 +1453,7 @@ namespace Development
                         {
                             continue;
                         }
-                        Thread.Sleep(5);
+                        Thread.Sleep(10);
                     }
                 }
                 catch (Exception ex)

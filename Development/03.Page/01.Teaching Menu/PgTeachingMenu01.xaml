@@ -312,7 +312,7 @@
                                         <local:DataDWord_D
                                                    Grid.Column="0"
                                                    Grid.Row="1"
-                                                   IsTabItem="False" 
+                                                   IsTabItem="False"
                                                    FontFamily="Arial" 
                                                    FontSize="20"
                                                    NoOfDecimalDigits="3" 
