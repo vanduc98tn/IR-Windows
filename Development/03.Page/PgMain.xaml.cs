@@ -607,28 +607,26 @@ namespace Development
             try
             {
 
-                while (this.isUpdate)
+
+                if (UiManager.Instance.PLC.device.isOpen())
                 {
-                    if (UiManager.Instance.PLC.device.isOpen())
+
+                    if (L_ListBitPLC10000_.Count >= 1)
                     {
 
-                        if (L_ListBitPLC10000_.Count >= 1)
+                        Dispatcher.Invoke(() =>
                         {
-
-                            Dispatcher.Invoke(() =>
-                            {
-                                this.btStart.Background = L_ListBitPLC10000_[2] ? LAMP_GREEN : LAMP_OFF;
-                                this.btStop.Background = L_ListBitPLC10000_[3] ? LAMP_RED : LAMP_OFF;
-                                this.btReset.Background = L_ListBitPLC10000_[7] ? LAMP_YELLOW : LAMP_OFF;
-                                this.btHome.Background = L_ListBitPLC10000_[5] ? LAMP_ORANGE : LAMP_OFF;
-                                this.btLotEnd.Background = L_ListBitPLC10000_[6] ? LAMP_BROWN : LAMP_OFF;
-                            });
-                        }
-
-
+                            this.btStart.Background = L_ListBitPLC10000_[2] ? LAMP_GREEN : LAMP_OFF;
+                            this.btStop.Background = L_ListBitPLC10000_[3] ? LAMP_RED : LAMP_OFF;
+                            this.btReset.Background = L_ListBitPLC10000_[7] ? LAMP_YELLOW : LAMP_OFF;
+                            this.btHome.Background = L_ListBitPLC10000_[5] ? LAMP_ORANGE : LAMP_OFF;
+                            this.btLotEnd.Background = L_ListBitPLC10000_[6] ? LAMP_BROWN : LAMP_OFF;
+                        });
                     }
 
+
                 }
+
             }
             catch (Exception ex)
             {
@@ -641,37 +639,34 @@ namespace Development
         {
             try
             {
-                while (this.isUpdate)
+                if (UiManager.Instance.PLC.device.isOpen())
                 {
-                    if (UiManager.Instance.PLC.device.isOpen())
+
+                    if (D_ListDoubleDevicePLC_0.Count >= 1)
                     {
-
-                        if (D_ListDoubleDevicePLC_0.Count >= 1)
+                        Dispatcher.Invoke(() =>
                         {
-                            Dispatcher.Invoke(() =>
-                            {
-                                this.lbCoutter1.Content = D_ListDoubleDevicePLC_0[20].ToString();
-                                this.lbCoutter2.Content = D_ListDoubleDevicePLC_0[22].ToString();
-                                this.lbCoutter3.Content = D_ListDoubleDevicePLC_0[24].ToString();
-                                this.lbCoutter4.Content = D_ListDoubleDevicePLC_0[26].ToString();
+                            this.lbCoutter1.Content = D_ListDoubleDevicePLC_0[20].ToString();
+                            this.lbCoutter2.Content = D_ListDoubleDevicePLC_0[22].ToString();
+                            this.lbCoutter3.Content = D_ListDoubleDevicePLC_0[24].ToString();
+                            this.lbCoutter4.Content = D_ListDoubleDevicePLC_0[26].ToString();
 
-                                this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0[30].ToString();
-                                this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0[32].ToString();
-                                this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0[34].ToString();
+                            this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0[30].ToString();
+                            this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0[32].ToString();
+                            this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0[34].ToString();
 
-                                this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0[60].ToString();
-                                this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0[62].ToString();
+                            this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0[60].ToString();
+                            this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0[62].ToString();
 
 
-                                this.lbTimer1.Content = (D_ListDoubleDevicePLC_0[50] / 1000.0).ToString();
+                            this.lbTimer1.Content = (D_ListDoubleDevicePLC_0[50] / 1000.0).ToString();
 
 
-                            });
-                        }
-
+                        });
                     }
 
                 }
+
             }
             catch (Exception ex)
             {
