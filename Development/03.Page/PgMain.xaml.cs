@@ -146,12 +146,7 @@ namespace Development
                         this.AddError(this.D_ListShortDevicePLC_0[207]);
                         this.AddError(this.D_ListShortDevicePLC_0[208]);
                         this.AddError(this.D_ListShortDevicePLC_0[209]);
-                        this.AddError(this.D_ListShortDevicePLC_0[210]);
-                        this.AddError(this.D_ListShortDevicePLC_0[211]);
-                        this.AddError(this.D_ListShortDevicePLC_0[212]);
-                        this.AddError(this.D_ListShortDevicePLC_0[213]);
-                        this.AddError(this.D_ListShortDevicePLC_0[214]);
-                        this.AddError(this.D_ListShortDevicePLC_0[215]);
+
                         bool flag3 = this.D_ListShortDevicePLC_0[200] == 0 && !this.hasClearedError;
                         if (flag3)
                         {
