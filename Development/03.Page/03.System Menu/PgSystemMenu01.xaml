@@ -562,6 +562,284 @@
 >
                             </local:PLCButton>
                         </Grid>
+                        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="4" Margin="2">
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Label Foreground="Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Disable Input1 Tool"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <local:PLCButton
+                                            Grid.Column="0"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="571"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10571"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#1"
+                                            TextON="#1"
+                                            Content="#1"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="1"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="572"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10572"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#2"
+                                            TextON="#2"
+                                            Content="#2"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="2"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="573"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10573"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#3"
+                                            TextON="#3"
+                                            Content="#3"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="3"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="574"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10574"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#4"
+                                            TextON="#4"
+                                            Content="#4"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="4"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="575"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10575"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#5"
+                                            TextON="#5"
+                                            Content="#5"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="5"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="576"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10576"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#6"
+                                            TextON="#6"
+                                            Content="#6"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="4" Margin="2">
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Label Foreground="Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Disable Input2 Tool"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <local:PLCButton
+                                            Grid.Column="0"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="581"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10581"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#1"
+                                            TextON="#1"
+                                            Content="#1"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="1"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="582"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10582"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#2"
+                                            TextON="#2"
+                                            Content="#2"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="2"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="583"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10583"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#3"
+                                            TextON="#3"
+                                            Content="#3"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="3"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="584"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10584"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#4"
+                                            TextON="#4"
+                                            Content="#4"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="4"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="585"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10585"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#5"
+                                            TextON="#5"
+                                            Content="#5"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                    <local:PLCButton
+                                            Grid.Column="5"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="586"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10586"
+                                            BackgroundLampOFF="GreenYellow"
+                                            BackgroundLampON="Red"
+                                            TextOFF="#6"
+                                            TextON="#6"
+                                            Content="#6"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"                                            
+>
+                                    </local:PLCButton>
+                                </Grid>
+                            </Grid>
+                        </Border>
 
                     </UniformGrid>
 
