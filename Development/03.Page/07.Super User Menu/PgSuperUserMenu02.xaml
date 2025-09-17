@@ -1009,18 +1009,18 @@
                     <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION OUTPUT TIMEOUT DELAY" />
                     <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="SPARE" />
                     <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="SPARE" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING SEARCHING ZERO SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING SENSOR DETECT TIME DELAY" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING IR TOTAL SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING START SEALING SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING END SEALING SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING VISION INSPEC SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING END IR SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING HEATER RETRY SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="TAPPING HEATER PRESS SET" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION TAPPING TRIGGER ON DELAY" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION TAPPING TRIGGER OUT DELAY" />
-                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION TAPPING TIMEOUT DELAY" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping SEARCHING ZERO SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping SENSOR DETECT TIME DELAY" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping IR TOTAL SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping START SEALING SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping END SEALING SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping VISION INSPEC SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping END IR SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping HEATER RETRY SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="Taping HEATER PRESS SET" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION Taping TRIGGER ON DELAY" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION Taping TRIGGER OUT DELAY" />
+                    <Label Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Content="VISION Taping TIMEOUT DELAY" />
 
                 </UniformGrid>
 

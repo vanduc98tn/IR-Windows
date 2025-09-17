@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9"  Height="60" Width="215" >
@@ -2174,7 +2174,10 @@
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
                             </Button>
-                            <Button Grid.Row="5" Grid.Column="3" Margin="3" x:Name="btLoadAx2Pos4">
+                            
+                            
+                            
+                            <!--<Button Grid.Row="5" Grid.Column="3" Margin="3" x:Name="btLoadAx2Pos4">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
@@ -2184,10 +2187,7 @@
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>
                             </Button>
-
-
-
-                            <!--<Button Grid.Row="1" Grid.Column="7" Margin="3" x:Name="btLoadAx2Pos6">
+                            <Button Grid.Row="1" Grid.Column="7" Margin="3" x:Name="btLoadAx2Pos6">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="/01.Image/save03.png" Margin="5"></Image>
                                 </StackPanel>

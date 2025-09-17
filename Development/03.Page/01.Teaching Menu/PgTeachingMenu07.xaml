@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Background="#333333" Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Foreground="White"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Foreground="White"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9"  Height="60" Width="215" >
@@ -1898,14 +1898,14 @@
                                         DeviceLamp="L" AddressLamp="18902"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="TAPPING STEP POS2"
-                                        TextON="TAPPING STEP POS2"
-                                        Content="TAPPING STEP POS2"
+                                        TextOFF="Taping STEP POS2"
+                                        TextON="Taping STEP POS2"
+                                        Content="Taping STEP POS2"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To TAPPING STEP POS2"
+                                        IsMesComfrim="Confrim Go To Taping STEP POS2"
 >
                             </local:PLCButton>
                             <local:PLCButton
@@ -1919,14 +1919,14 @@
                                         DeviceLamp="L" AddressLamp="18903"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="TAPPING STEP ALIGN POS3"
-                                        TextON="TAPPING STEP ALIGN POS3"
-                                        Content="TAPPING STEP ALIGN POS3"
+                                        TextOFF="Taping STEP ALIGN POS3"
+                                        TextON="Taping STEP ALIGN POS3"
+                                        Content="Taping STEP ALIGN POS3"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To TAPPING STEP ALIGN POS3"
+                                        IsMesComfrim="Confrim Go To Taping STEP ALIGN POS3"
 >
                             </local:PLCButton>
                             <local:PLCButton
@@ -1940,14 +1940,14 @@
                                         DeviceLamp="L" AddressLamp="18904"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="TAPPING SEARCHING ZERO POS4"
-                                        TextON="TAPPING SEARCHING ZERO POS4"
-                                        Content="TAPPING SEARCHING ZERO POS4"
+                                        TextOFF="Taping SEARCHING ZERO POS4"
+                                        TextON="Taping SEARCHING ZERO POS4"
+                                        Content="Taping SEARCHING ZERO POS4"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To TAPPING POS4"
+                                        IsMesComfrim="Confrim Go To Taping POS4"
 >
                             </local:PLCButton>
                             <local:PLCButton
@@ -1961,14 +1961,14 @@
                                         DeviceLamp="L" AddressLamp="18905"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="TAPPING MOVE MORE ZERO POS5"
-                                        TextON="TAPPING MOVE MORE ZERO POS5"
-                                        Content="TAPPING MOVE MORE ZERO POS5"
+                                        TextOFF="Taping MOVE MORE ZERO POS5"
+                                        TextON="Taping MOVE MORE ZERO POS5"
+                                        Content="Taping MOVE MORE ZERO POS5"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To TAPPING POS5"
+                                        IsMesComfrim="Confrim Go To Taping POS5"
 >
                             </local:PLCButton>
 

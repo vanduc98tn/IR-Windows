@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9"  Height="60" Width="215" >

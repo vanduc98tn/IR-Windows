@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9" Background="#333333" Height="60" Width="215" >
@@ -1385,7 +1385,7 @@
                         <Label Grid.Row="6"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX TOOL POINT"></Label>
                         <Label Grid.Row="7"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX TOOL PITCH"></Label>
 
-                        <Label Grid.Row="10"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="LightGray" Content="OUTPUT1 PLACE TAPPING"></Label>
+                        <Label Grid.Row="10"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="LightGray" Content="OUTPUT1 PLACE Taping"></Label>
                         <Label Grid.Row="11"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX X POINT"></Label>
                         <Label Grid.Row="12"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX X PITCH"></Label>
                         <Label Grid.Row="13"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX Y POINT"></Label>
@@ -1926,7 +1926,7 @@
                         <Label Grid.Row="6"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX TOOL POINT"></Label>
                         <Label Grid.Row="7"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX TOOL PITCH"></Label>
 
-                        <Label Grid.Row="10"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="LightGray" Content="OUTPUT2 PLACE TAPPING"></Label>
+                        <Label Grid.Row="10"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="LightGray" Content="OUTPUT2 PLACE Taping"></Label>
                         <Label Grid.Row="11"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX X POINT"></Label>
                         <Label Grid.Row="12"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX X PITCH"></Label>
                         <Label Grid.Row="13"  Grid.Column="3" Margin="2,2,2,2" Padding="10,0,0,0" HorizontalContentAlignment="Left" Background="White" Content="MATRIX Y POINT"></Label>

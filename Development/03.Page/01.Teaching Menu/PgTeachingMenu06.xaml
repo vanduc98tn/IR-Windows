@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9"  Height="60" Width="215" >
@@ -1719,14 +1719,14 @@
                                         DeviceLamp="L" AddressLamp="18209"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PX P1 TAPPING POS9"
-                                        TextON="PX P1 TAPPING POS9"
-                                        Content="PX P1 TAPPING POS9"
+                                        TextOFF="PX P1 Taping POS9"
+                                        TextON="PX P1 Taping POS9"
+                                        Content="PX P1 Taping POS9"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PX P1 TAPPING POS9"
+                                        IsMesComfrim="Confrim Go To PX P1 Taping POS9"
 >
                             </local:PLCButton>
 
@@ -1742,14 +1742,14 @@
                                         DeviceLamp="L" AddressLamp="18210"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PX RUN TAPPING POS10"
-                                        TextON="PX RUN TAPPING POS10"
-                                        Content="PX RUN TAPPING POS10"
+                                        TextOFF="PX RUN Taping POS10"
+                                        TextON="PX RUN Taping POS10"
+                                        Content="PX RUN Taping POS10"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PX RUN TAPPING POS10"
+                                        IsMesComfrim="Confrim Go To PX RUN Taping POS10"
 >
                             </local:PLCButton>
 
@@ -2481,14 +2481,14 @@
                                         DeviceLamp="L" AddressLamp="18309"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PY P1 TAPPING POS9"
-                                        TextON="PY P1 TAPPING POS9"
-                                        Content="PY P1 TAPPING POS9"
+                                        TextOFF="PY P1 Taping POS9"
+                                        TextON="PY P1 Taping POS9"
+                                        Content="PY P1 Taping POS9"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PY P1 TAPPING POS9"
+                                        IsMesComfrim="Confrim Go To PY P1 Taping POS9"
 >
                             </local:PLCButton>
 
@@ -2504,14 +2504,14 @@
                                         DeviceLamp="L" AddressLamp="18310"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PY RUN TAPPING POS10"
-                                        TextON="PY RUN TAPPING POS10"
-                                        Content="PY RUN TAPPING POS10"
+                                        TextOFF="PY RUN Taping POS10"
+                                        TextON="PY RUN Taping POS10"
+                                        Content="PY RUN Taping POS10"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PY RUN TAPPING POS10"
+                                        IsMesComfrim="Confrim Go To PY RUN Taping POS10"
 >
                             </local:PLCButton>
                             
@@ -3200,14 +3200,14 @@
                                         DeviceLamp="L" AddressLamp="18407"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PZ PALCE TAPPING OFFSET POS7"
-                                        TextON="PZ PALCE TAPPING OFFSET POS7"
-                                        Content="PZ PALCE TAPPING OFFSET POS7"
+                                        TextOFF="PZ PALCE Taping OFFSET POS7"
+                                        TextON="PZ PALCE Taping OFFSET POS7"
+                                        Content="PZ PALCE Taping OFFSET POS7"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PZ PALCE TAPPING OFFSET POS7"
+                                        IsMesComfrim="Confrim Go To PZ PALCE Taping OFFSET POS7"
 >
                             </local:PLCButton>
                             <local:PLCButton
@@ -3221,14 +3221,14 @@
                                         DeviceLamp="L" AddressLamp="18408"
                                         BackgroundLampOFF="Transparent"
                                         BackgroundLampON="GreenYellow"
-                                        TextOFF="PZ PALCE TAPPING L.DN POS8"
-                                        TextON="PZ PALCE TAPPING L.DN POS8"
-                                        Content="PZ PALCE TAPPING L.DN POS8"
+                                        TextOFF="PZ PALCE Taping L.DN POS8"
+                                        TextON="PZ PALCE Taping L.DN POS8"
+                                        Content="PZ PALCE Taping L.DN POS8"
                                         Background="Transparent"
                                         Foreground="Black"
                                         FontSize="12"
                                         IsComfrim="True"
-                                        IsMesComfrim="Confrim Go To PZ PALCE TAPPING L.DN POS8"
+                                        IsMesComfrim="Confrim Go To PZ PALCE Taping L.DN POS8"
 >
                             </local:PLCButton>
 

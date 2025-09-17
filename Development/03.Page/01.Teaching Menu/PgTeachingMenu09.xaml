@@ -109,7 +109,7 @@
                         </Button>
                         <Button x:Name="btSetting8"  Height="60" Width="215" >
 
-                            <TextBlock  Text="Tapping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Taping"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                         </Button>
                         <Button x:Name="btSetting9"  Height="60" Width="215" >
@@ -288,17 +288,17 @@
 
 
 
-                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PX</Label>
-                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PY</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PX</Label>
+                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PY</Label>
 
-                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PX</Label>
-                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PY</Label>
+                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PX</Label>
+                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PY</Label>
 
-                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PX</Label>
-                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PY</Label>
+                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PX</Label>
+                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PY</Label>
 
-                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PX</Label>
-                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PY</Label>
+                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PX</Label>
+                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PY</Label>
 
                             <Label Grid.Column="9" Grid.Row="0" Background="Brown"  BorderThickness="1" Margin="1,1,1,1" Padding="0">PZ</Label>
 
@@ -1164,17 +1164,17 @@
 
 
 
-                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PX</Label>
-                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PY</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PX</Label>
+                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PY</Label>
 
-                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PX</Label>
-                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PY</Label>
+                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PX</Label>
+                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PY</Label>
 
-                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PX</Label>
-                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PY</Label>
+                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PX</Label>
+                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PY</Label>
 
-                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PX</Label>
-                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PY</Label>
+                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PX</Label>
+                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PY</Label>
 
                             <Label Grid.Column="9" Grid.Row="0" Background="Brown"  BorderThickness="1" Margin="1,1,1,1" Padding="0">PZ</Label>
                             
@@ -2043,13 +2043,13 @@
 
 
 
-                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 Z</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 Z</Label>
 
-                            <Label Grid.Column="2" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 Z</Label>
+                            <Label Grid.Column="2" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 Z</Label>
 
-                            <Label Grid.Column="3" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 Z</Label>
+                            <Label Grid.Column="3" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 Z</Label>
 
-                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 Z</Label>
+                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 Z</Label>
 
 
                             <Label Grid.Column="0" Grid.Row="1"   BorderThickness="1" Margin="1,1,1,1" Padding="0">POINT #1</Label>
@@ -2971,17 +2971,17 @@ Foreground="Cyan">
 
 
 
-                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PX</Label>
-                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PY</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PX</Label>
+<Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PY</Label>
 
-                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PX</Label>
-                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PY</Label>
+<Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PX</Label>
+<Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PY</Label>
 
-                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PX</Label>
-                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PY</Label>
+<Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PX</Label>
+<Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PY</Label>
 
-                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PX</Label>
-                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PY</Label>
+<Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PX</Label>
+<Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PY</Label>
 
                             <Label Grid.Column="0" Grid.Row="1"   BorderThickness="1" Margin="1,1,1,1" Padding="0">TOOL #1</Label>
                             <Label Grid.Column="0" Grid.Row="2"   BorderThickness="1" Margin="1,1,1,1" Padding="0">TOOL #2</Label>
@@ -3617,17 +3617,17 @@ Foreground="Cyan">
 
 
 
-                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PX</Label>
-                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#1 PY</Label>
+                            <Label Grid.Column="1" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PX</Label>
+                            <Label Grid.Column="2" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #1 PY</Label>
 
-                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PX</Label>
-                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#2 PY</Label>
+                            <Label Grid.Column="3" Grid.Row="0" Background="LightSalmon"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PX</Label>
+                            <Label Grid.Column="4" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #2 PY</Label>
 
-                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PX</Label>
-                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">S#3 PY</Label>
+                            <Label Grid.Column="5" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PX</Label>
+                            <Label Grid.Column="6" Grid.Row="0"   BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #3 PY</Label>
 
-                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PX</Label>
-                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">S#4 PY</Label>
+                            <Label Grid.Column="7" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PX</Label>
+                            <Label Grid.Column="8" Grid.Row="0" Background="LightSalmon"  BorderThickness="1" Margin="1,1,1,1" Padding="0">Table #4 PY</Label>
 
                             <Label Grid.Column="0" Grid.Row="1"   BorderThickness="1" Margin="1,1,1,1" Padding="0">TOOL #1</Label>
                             <Label Grid.Column="0" Grid.Row="2"   BorderThickness="1" Margin="1,1,1,1" Padding="0">TOOL #2</Label>
