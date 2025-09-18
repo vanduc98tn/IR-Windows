@@ -112,17 +112,30 @@ namespace Development
                 bool flag = UiManager.Instance.PLC.device.isOpen();
                 if (flag)
                 {
-                    UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 700, out this.D_ListShortDevicePLC_0);
                     UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.M, 0, 700, out this.M_ListBitPLC0_);
                     UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.L, 10000, 20, out this.L_ListBitPLC10000_);
-                    UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
+
+                    UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 800, out this.D_ListShortDevicePLC_0);
+
+                    //UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
+                    this.D_ListDoubleDevicePLC_0.Clear();
+                    for (int i = 0; i < D_ListShortDevicePLC_0.Count/2; i++)
+                    {
+                        int low = this.D_ListShortDevicePLC_0[i * 2];
+                        int high = this.D_ListShortDevicePLC_0[i * 2 + 1];
+
+                        // Ghép thành 32-bit (little-endian: low trước, high sau)
+                        int dword = (high << 16) | (ushort)low;
+                        this.D_ListDoubleDevicePLC_0.Add(dword);
+                    }
+                    
 
                     this.UpdateError();
                     this.UpdateUI_Devices();
                     this.UpdateUI_Lamp();
                 }
 
-                Thread.Sleep(5);
+                Thread.Sleep(20);
             }
         }
        
