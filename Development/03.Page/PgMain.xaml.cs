@@ -117,17 +117,17 @@ namespace Development
 
                     UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 800, out this.D_ListShortDevicePLC_0);
 
-                    //UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
-                    this.D_ListDoubleDevicePLC_0.Clear();
-                    for (int i = 0; i < D_ListShortDevicePLC_0.Count/2; i++)
-                    {
-                        int low = this.D_ListShortDevicePLC_0[i * 2];
-                        int high = this.D_ListShortDevicePLC_0[i * 2 + 1];
+                    UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
+                    //this.D_ListDoubleDevicePLC_0.Clear();
+                    //for (int i = 0; i < D_ListShortDevicePLC_0.Count/2; i++)
+                    //{
+                    //    int low = this.D_ListShortDevicePLC_0[i * 2];
+                    //    int high = this.D_ListShortDevicePLC_0[i * 2 + 1];
 
-                        // Ghép thành 32-bit (little-endian: low trước, high sau)
-                        int dword = (high << 16) | (ushort)low;
-                        this.D_ListDoubleDevicePLC_0.Add(dword);
-                    }
+                    //    // Ghép thành 32-bit (little-endian: low trước, high sau)
+                    //    int dword = (high << 16) | (ushort)low;
+                    //    this.D_ListDoubleDevicePLC_0.Add(dword);
+                    //}
                     
 
                     this.UpdateError();
