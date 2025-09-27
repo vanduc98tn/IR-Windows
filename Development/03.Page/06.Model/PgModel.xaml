@@ -130,8 +130,21 @@
 
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"   Content="Curent Model Name " Foreground="Black" FontSize="21" FontWeight="Bold"></Label>
-                    <Border Margin="0,5,5,5" Grid.Column="1" Background="White" BorderBrush="#444444" BorderThickness="2" CornerRadius="10,10,10,10" Grid.Row="0" >
-                        <Label Name="lblModelNo" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="00" FontFamily="Bahnschrift SemiBold Condensed" FontSize="35"></Label>
+                    <Border Margin="0,5,5,5" Grid.Column="1" Background="White" BorderBrush="#444444" BorderThickness="2" CornerRadius="10" Grid.Row="0" >
+                        <!--<Label Name="lblModelNo" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="00" FontFamily="Bahnschrift SemiBold Condensed" FontSize="35"></Label>-->
+                        <local:DataDWord_ZR
+                            Grid.Row="0"
+                            Margin="0"
+                            IsTabItem="False" 
+                            FontFamily="Arial"
+                            FontSize="25"
+                            NoOfDecimalDigits="0" 
+                            NoOfDisplay="1" 
+                            Device="ZR10610" 
+                            IsReadOnly="True" 
+                            Background="Transparent" 
+                            Foreground="Black">
+                        </local:DataDWord_ZR>
                     </Border>
                     <Border Margin="0,5,5,5" Grid.Column="2" Background="White" BorderBrush="#444444" BorderThickness="2" CornerRadius="10,10,10,10" Grid.Row="0" >
                         <Label Name="lblModel" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="No Connect..." FontFamily="Bahnschrift SemiBold Condensed" FontSize="35"></Label>
@@ -336,10 +349,81 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Label  Grid.Column="0" Margin="2,2,2,2" Content="Select Model No"></Label>
-                        <TextBox x:Name="TbxSelectModel" Grid.Column="1" Margin="10" Text="0"></TextBox>
-                        <Button x:Name="BtnSaveData" Grid.Column="2" Margin="10">Save Data</Button>
-                        <Button x:Name="BtnLoadModel" Grid.Column="3" Margin="10">Load Model</Button>
-                        <Button x:Name="BtnDeleteModel" Grid.Column="4" Margin="10">Delete Model</Button>
+                        <local:DataDWord_ZR
+                            Grid.Column="1"
+                            Margin="10"
+                            IsTabItem="False" 
+                            FontFamily="Arial"
+                            FontSize="25"
+                            NoOfDecimalDigits="0" 
+                            NoOfDisplay="1" 
+                            Device="ZR10600" 
+                            IsReadOnly="False" 
+                            Background="Black" 
+                            Foreground="Cyan">
+                        </local:DataDWord_ZR>
+
+                        <local:PLCButton
+                                        Grid.Column="2"
+                                        Margin="10"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="800"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="10800"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Save Data"
+                                        TextON="Save Data"
+                                        Content="Save Data"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Save Data"
+>
+                        </local:PLCButton>
+                        <local:PLCButton
+                                        Grid.Column="3"
+                                        Margin="10"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="802"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="10802"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Load Model"
+                                        TextON="Load Model"
+                                        Content="Load Model"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Load Model"
+>
+                        </local:PLCButton>
+                        <local:PLCButton
+                                        Grid.Column="4"
+                                        Margin="10"
+                                        Action="Momentary"
+                                        IsTabItem="False"
+                                        DeviceWrite="L" AddressWrite="804"
+                                        UseLampCodition="True"
+                                        DeviceLamp="L" AddressLamp="10804"
+                                        BackgroundLampOFF="Transparent"
+                                        BackgroundLampON="GreenYellow"
+                                        TextOFF="Delete Model"
+                                        TextON="Delete Model"
+                                        Content="Delete Model"
+                                        Background="Transparent"
+                                        Foreground="Black"
+                                        FontSize="16"
+                                        IsComfrim="True"
+                                        IsMesComfrim="Confrim Delete Model"
+>
+                        </local:PLCButton>
+
                     </Grid>
 
 
@@ -401,10 +485,55 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Label  Grid.Column="0" Margin="2,2,2,2" Content="Select Model No"></Label>
-                        <TextBox x:Name="TbxModelCopy"  Grid.Column="1" Margin="10" Text="0"></TextBox>
+                        <local:DataDWord_ZR
+                            Grid.Column="1"
+                            Margin="10"
+                            IsTabItem="False" 
+                            FontFamily="Arial" 
+                            FontSize="25"
+                            NoOfDecimalDigits="0" 
+                            NoOfDisplay="1" 
+                            Device="ZR10602" 
+                            IsReadOnly="False" 
+                            Background="Black" 
+                            Foreground="Cyan">
+                        </local:DataDWord_ZR>
+                        
                         <Label  Grid.Column="2" Margin="2,2,2,2" Content="Select Model No"></Label>
-                        <TextBox x:Name="TbxModelPaste"  Grid.Column="3" Margin="10" Text="0"></TextBox>
-                        <Button x:Name="BtnCopyData" Grid.Column="4" Margin="10">Copy Data</Button>
+                        <local:DataDWord_ZR
+                            Grid.Column="3"
+                            Margin="10"
+                            IsTabItem="False" 
+                            FontFamily="Arial" 
+                            FontSize="25"
+                            NoOfDecimalDigits="0" 
+                            NoOfDisplay="1" 
+                            Device="ZR10604" 
+                            IsReadOnly="False" 
+                            Background="Black" 
+                            Foreground="Cyan">
+                        </local:DataDWord_ZR>
+                        
+                        <local:PLCButton
+                            Grid.Column="4"
+                            Margin="10"
+                            Action="Momentary"
+                            IsTabItem="False"
+                            DeviceWrite="L" AddressWrite="804"
+                            UseLampCodition="True"
+                            DeviceLamp="L" AddressLamp="10804"
+                            BackgroundLampOFF="Transparent"
+                            BackgroundLampON="GreenYellow"
+                            TextOFF="Copy Data"
+                            TextON="Copy Data"
+                            Content="Copy Data"
+                            Background="Transparent"
+                            Foreground="Black"
+                            FontSize="16"
+                            IsComfrim="True"
+                            IsMesComfrim="Confrim Copy Data"
+>
+                        </local:PLCButton>
                     </Grid>
                 </Grid>
             </Grid>
