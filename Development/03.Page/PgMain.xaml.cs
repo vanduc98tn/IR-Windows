@@ -81,7 +81,7 @@ namespace Development
         private void PgMain_Unloaded(object sender, RoutedEventArgs e)
         {
             this.isUpdate = false;
-            this.RemoveDevicePLC();
+            //this.RemoveDevicePLC();
             this.RemoveDataVision();
             this.StopSound();
 
@@ -92,7 +92,7 @@ namespace Development
             this.isUpdate = true;
             this.StartTimer();
             this.LoadLotData();
-            this.RegisterDevicePLC();
+            //this.RegisterDevicePLC();
 
             this.RegisterDataTester();
             this.ThreadUpDatePLC();
@@ -182,10 +182,6 @@ namespace Development
                     }
                 }
             });
-        }
-        private void AddDevicePLC()
-        {
-            UiManager.Instance.PLC.AddBitAddress("M", 100);
         }
 
 
@@ -553,6 +549,10 @@ namespace Development
         {
             SystemsManager.Instance.NotifyPLCBits.Attach(this);
             this.AddDevicePLC();
+        }
+        private void AddDevicePLC()
+        {
+            UiManager.Instance.PLC.AddBitAddress("M", 100);
         }
         public void NotifyChangeBits(string key, bool status)
         {

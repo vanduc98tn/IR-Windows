@@ -140,7 +140,7 @@
                             FontSize="25"
                             NoOfDecimalDigits="0" 
                             NoOfDisplay="1" 
-                            Device="ZR10610" 
+                            Device="10610" 
                             IsReadOnly="True" 
                             Background="Transparent" 
                             Foreground="Black">
@@ -357,7 +357,7 @@
                             FontSize="25"
                             NoOfDecimalDigits="0" 
                             NoOfDisplay="1" 
-                            Device="ZR10600" 
+                            Device="10600" 
                             IsReadOnly="False" 
                             Background="Black" 
                             Foreground="Cyan">
@@ -493,7 +493,7 @@
                             FontSize="25"
                             NoOfDecimalDigits="0" 
                             NoOfDisplay="1" 
-                            Device="ZR10602" 
+                            Device="10602" 
                             IsReadOnly="False" 
                             Background="Black" 
                             Foreground="Cyan">
@@ -508,7 +508,7 @@
                             FontSize="25"
                             NoOfDecimalDigits="0" 
                             NoOfDisplay="1" 
-                            Device="ZR10604" 
+                            Device="10604" 
                             IsReadOnly="False" 
                             Background="Black" 
                             Foreground="Cyan">
