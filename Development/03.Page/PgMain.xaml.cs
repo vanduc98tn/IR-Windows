@@ -123,15 +123,21 @@ namespace Development
 
                     #region D_ListShortDevicePLC_0_->D_ListDoubleDevicePLC_0_
                     D_ListDoubleDevicePLC_0_.Clear();
-                    for (int i = 0; i < D_ListShortDevicePLC_0_.Count; i += 2)
+                    for (int i = 0; i < D_ListShortDevicePLC_0_.Count; i++)
                     {
-                        short lowWord = D_ListShortDevicePLC_0_[i];
-                        short highWord = D_ListShortDevicePLC_0_[i + 1];
+                        if (i + 1 < D_ListShortDevicePLC_0_.Count)
+                        {
+                            ushort lowWord = (ushort)D_ListShortDevicePLC_0_[i];       // word thấp
+                            ushort highWord = (ushort)D_ListShortDevicePLC_0_[i + 1];  // word cao
+                            int value = (int)((highWord << 16) | lowWord); // ghép 2 word thành int 32-bit có dấu
 
-                        // ghép 2 word thành 1 int (32-bit)
-                        int value = ((ushort)lowWord << 16) | (ushort)highWord;
+                            D_ListDoubleDevicePLC_0_.Add(value);
+                        }
+                        else
+                        {
+                            D_ListDoubleDevicePLC_0_.Add(0);
 
-                        D_ListDoubleDevicePLC_0_.Add(value);
+                        }
                     }
                     #endregion
 
