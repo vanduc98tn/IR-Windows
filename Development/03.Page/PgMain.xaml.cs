@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,11 +28,13 @@ namespace Development
         private readonly CompositeViewModel compositeViewModel;
 
         private bool isUpdate = false;
-        private List<short> D_ListShortDevicePLC_0 = new List<short>();
-        private List<int> D_ListDoubleDevicePLC_0 = new List<int>();
-        private List<bool> M_ListBitPLC0_ = new List<bool>();
-        private List<bool> L_ListBitPLC10000_ = new List<bool>();
+        private List<short> ZR_ListShortDevicePLC_10600_ = new List<short>();
+        private List<short> D_ListShortDevicePLC_0_ = new List<short>();
+        private List<int> D_ListDoubleDevicePLC_0_ = new List<int>();
+        private List<bool> M_ListBitPLC_0_ = new List<bool>();
+        private List<bool> L_ListBitPLC_10000_ = new List<bool>();
         private bool hasClearedError = false;
+        private string strModelName = "";
 
 
         private MediaPlayer mediaPlayer = new MediaPlayer();
@@ -112,23 +115,40 @@ namespace Development
                 bool flag = UiManager.Instance.PLC.device.isOpen();
                 if (flag)
                 {
-                    UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.M, 0, 700, out this.M_ListBitPLC0_);
-                    UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.L, 10000, 20, out this.L_ListBitPLC10000_);
+                    UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.M, 0, 400, out this.M_ListBitPLC_0_);
+                    UiManager.Instance.PLC.device.ReadMultiBits(DeviceCode.L, 10000, 20, out this.L_ListBitPLC_10000_);
+                    UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.ZR, 10600, 200, out this.ZR_ListShortDevicePLC_10600_);
+                    UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 400, out this.D_ListShortDevicePLC_0_);
+                    //UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0_);
 
-                    UiManager.Instance.PLC.device.ReadMultiWord(DeviceCode.D, 0, 800, out this.D_ListShortDevicePLC_0);
+                    #region D_ListShortDevicePLC_0_->D_ListDoubleDevicePLC_0_
+                    D_ListDoubleDevicePLC_0_.Clear();
+                    for (int i = 0; i < D_ListShortDevicePLC_0_.Count; i += 2)
+                    {
+                        short lowWord = D_ListShortDevicePLC_0_[i];
+                        short highWord = D_ListShortDevicePLC_0_[i + 1];
 
-                    UiManager.Instance.PLC.device.ReadMultiDoubleWord(DeviceCode.D, 0, 100, out this.D_ListDoubleDevicePLC_0);
-                    //this.D_ListDoubleDevicePLC_0.Clear();
-                    //for (int i = 0; i < D_ListShortDevicePLC_0.Count/2; i++)
-                    //{
-                    //    int low = this.D_ListShortDevicePLC_0[i * 2];
-                    //    int high = this.D_ListShortDevicePLC_0[i * 2 + 1];
+                        // ghép 2 word thành 1 int (32-bit)
+                        int value = ((ushort)lowWord << 16) | (ushort)highWord;
 
-                    //    // Ghép thành 32-bit (little-endian: low trước, high sau)
-                    //    int dword = (high << 16) | (ushort)low;
-                    //    this.D_ListDoubleDevicePLC_0.Add(dword);
-                    //}
-                    
+                        D_ListDoubleDevicePLC_0_.Add(value);
+                    }
+                    #endregion
+
+                    #region ZR10620-ZR10629->ASCII
+                    var subWords = ZR_ListShortDevicePLC_10600_.Skip(20).Take(10).ToList(); // Lấy 10 word từ ZR10620 -> ZR10629
+                    List<byte> bytes = new List<byte>(); // Ghép thành byte[]
+                    foreach (short word in subWords)
+                    {
+                        // Thường là LowByte trước, HighByte sau
+                        byte low = (byte)(word & 0xFF);
+                        byte high = (byte)((word >> 8) & 0xFF);
+                        bytes.Add(low);
+                        bytes.Add(high);
+                    }
+                    strModelName = Encoding.ASCII.GetString(bytes.ToArray()); // Chuyển sang chuỗi ASCII (tối đa 20 ký tự)
+                    strModelName = strModelName.TrimEnd('\0');  // Cắt bỏ ký tự rỗng
+                    #endregion
 
                     this.UpdateError();
                     this.UpdateUI_Devices();
@@ -146,21 +166,21 @@ namespace Development
                 bool flag = UiManager.Instance.PLC.device.isOpen();
                 if (flag)
                 {
-                    bool flag2 = this.D_ListShortDevicePLC_0.Count >= 1;
+                    bool flag2 = this.D_ListShortDevicePLC_0_.Count >= 1;
                     if (flag2)
                     {
-                        this.AddError(this.D_ListShortDevicePLC_0[200]);
-                        this.AddError(this.D_ListShortDevicePLC_0[201]);
-                        this.AddError(this.D_ListShortDevicePLC_0[202]);
-                        this.AddError(this.D_ListShortDevicePLC_0[203]);
-                        this.AddError(this.D_ListShortDevicePLC_0[204]);
-                        this.AddError(this.D_ListShortDevicePLC_0[205]);
-                        this.AddError(this.D_ListShortDevicePLC_0[206]);
-                        this.AddError(this.D_ListShortDevicePLC_0[207]);
-                        this.AddError(this.D_ListShortDevicePLC_0[208]);
-                        this.AddError(this.D_ListShortDevicePLC_0[209]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[200]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[201]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[202]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[203]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[204]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[205]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[206]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[207]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[208]);
+                        this.AddError(this.D_ListShortDevicePLC_0_[209]);
 
-                        bool flag3 = this.D_ListShortDevicePLC_0[200] == 0 && !this.hasClearedError;
+                        bool flag3 = this.D_ListShortDevicePLC_0_[200] == 0 && !this.hasClearedError;
                         if (flag3)
                         {
                             this.ClearError();
@@ -168,13 +188,13 @@ namespace Development
                         }
                         else
                         {
-                            bool flag4 = this.D_ListShortDevicePLC_0[200] != 0;
+                            bool flag4 = this.D_ListShortDevicePLC_0_[200] != 0;
                             if (flag4)
                             {
                                 this.hasClearedError = false;
                             }
                         }
-                        bool flag5 = this.M_ListBitPLC0_[7];
+                        bool flag5 = this.M_ListBitPLC_0_[7];
                         if (flag5)
                         {
                             this.ClearError();
@@ -624,16 +644,16 @@ namespace Development
                 if (UiManager.Instance.PLC.device.isOpen())
                 {
 
-                    if (L_ListBitPLC10000_.Count >= 1)
+                    if (L_ListBitPLC_10000_.Count >= 1)
                     {
 
                         Dispatcher.Invoke(() =>
                         {
-                            this.btStart.Background = L_ListBitPLC10000_[2] ? LAMP_GREEN : LAMP_OFF;
-                            this.btStop.Background = L_ListBitPLC10000_[3] ? LAMP_RED : LAMP_OFF;
-                            this.btReset.Background = L_ListBitPLC10000_[7] ? LAMP_YELLOW : LAMP_OFF;
-                            this.btHome.Background = L_ListBitPLC10000_[5] ? LAMP_ORANGE : LAMP_OFF;
-                            this.btLotEnd.Background = L_ListBitPLC10000_[6] ? LAMP_BROWN : LAMP_OFF;
+                            this.btStart.Background = L_ListBitPLC_10000_[2] ? LAMP_GREEN : LAMP_OFF;
+                            this.btStop.Background = L_ListBitPLC_10000_[3] ? LAMP_RED : LAMP_OFF;
+                            this.btReset.Background = L_ListBitPLC_10000_[7] ? LAMP_YELLOW : LAMP_OFF;
+                            this.btHome.Background = L_ListBitPLC_10000_[5] ? LAMP_ORANGE : LAMP_OFF;
+                            this.btLotEnd.Background = L_ListBitPLC_10000_[6] ? LAMP_BROWN : LAMP_OFF;
                         });
                     }
 
@@ -655,24 +675,28 @@ namespace Development
                 if (UiManager.Instance.PLC.device.isOpen())
                 {
 
-                    if (D_ListDoubleDevicePLC_0.Count >= 1)
+                    if (D_ListDoubleDevicePLC_0_.Count >= 1)
                     {
                         Dispatcher.Invoke(() =>
                         {
-                            this.lbCoutter1.Content = D_ListDoubleDevicePLC_0[20].ToString();
-                            this.lbCoutter2.Content = D_ListDoubleDevicePLC_0[22].ToString();
-                            this.lbCoutter3.Content = D_ListDoubleDevicePLC_0[24].ToString();
-                            this.lbCoutter4.Content = D_ListDoubleDevicePLC_0[26].ToString();
-
-                            this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0[30].ToString();
-                            this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0[32].ToString();
-                            this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0[34].ToString();
-
-                            this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0[60].ToString();
-                            this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0[62].ToString();
+                            this.lblModelNo.Content = ZR_ListShortDevicePLC_10600_[10].ToString();
+                            this.lblModelName.Content = strModelName.ToString();
 
 
-                            this.lbTimer1.Content = (D_ListDoubleDevicePLC_0[50] / 1000.0).ToString();
+                            this.lbCoutter1.Content = D_ListDoubleDevicePLC_0_[20].ToString();
+                            this.lbCoutter2.Content = D_ListDoubleDevicePLC_0_[22].ToString();
+                            this.lbCoutter3.Content = D_ListDoubleDevicePLC_0_[24].ToString();
+                            this.lbCoutter4.Content = D_ListDoubleDevicePLC_0_[26].ToString();
+
+                            this.lbCoutterA1.Content = D_ListDoubleDevicePLC_0_[30].ToString();
+                            this.lbCoutterA2.Content = D_ListDoubleDevicePLC_0_[32].ToString();
+                            this.lbCoutterA3.Content = D_ListDoubleDevicePLC_0_[34].ToString();
+
+                            this.lbCoutterNG1.Content = D_ListDoubleDevicePLC_0_[60].ToString();
+                            this.lbCoutterNG2.Content = D_ListDoubleDevicePLC_0_[62].ToString();
+
+
+                            this.lbTimer1.Content = (D_ListDoubleDevicePLC_0_[50] / 1000.0).ToString();
 
 
                         });

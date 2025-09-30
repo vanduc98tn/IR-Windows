@@ -39,11 +39,11 @@ namespace Development
             this.txbModel3.PreviewMouseDown += TxbModel3_PreviewMouseDown;
             this.txbModel4.PreviewMouseDown += TxbModel4_PreviewMouseDown;
             this.txbModel5.PreviewMouseDown += TxbModel5_PreviewMouseDown;
-            this.txbModel6.PreviewMouseDown += TxbModel6_PreviewMouseDown;
-            this.txbModel7.PreviewMouseDown += TxbModel7_PreviewMouseDown;
-            this.txbModel8.PreviewMouseDown += TxbModel8_PreviewMouseDown;
-            this.txbModel9.PreviewMouseDown += TxbModel9_PreviewMouseDown;
-            this.txbModel10.PreviewMouseDown += TxbModel10_PreviewMouseDown;
+            //this.txbModel6.PreviewMouseDown += TxbModel6_PreviewMouseDown;
+            //this.txbModel7.PreviewMouseDown += TxbModel7_PreviewMouseDown;
+            //this.txbModel8.PreviewMouseDown += TxbModel8_PreviewMouseDown;
+            //this.txbModel9.PreviewMouseDown += TxbModel9_PreviewMouseDown;
+            //this.txbModel10.PreviewMouseDown += TxbModel10_PreviewMouseDown;
         }
 
 
@@ -232,11 +232,11 @@ namespace Development
                     UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_03, 10, out NameModel03);
                     UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_04, 10, out NameModel04);
                     UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_05, 10, out NameModel05);
-                    UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_06, 10, out NameModel06);
-                    UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_07, 10, out NameModel07);
-                    UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_08, 10, out NameModel08);
-                    UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_09, 10, out NameModel09);
-                    UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_10, 10, out NameModel10);
+                    //UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_06, 10, out NameModel06);
+                    //UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_07, 10, out NameModel07);
+                    //UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_08, 10, out NameModel08);
+                    //UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_09, 10, out NameModel09);
+                    //UiManager.Instance.PLC.device.ReadASCIIString(DeviceCode.ZR, PLCStore.R_NAME_MODEL_10, 10, out NameModel10);
 
                 }
 
@@ -259,11 +259,11 @@ namespace Development
                     this.txbModel3.Text = NameModel03;
                     this.txbModel4.Text = NameModel04;
                     this.txbModel5.Text = NameModel05;
-                    this.txbModel6.Text = NameModel06;
-                    this.txbModel7.Text = NameModel07;
-                    this.txbModel8.Text = NameModel08;
-                    this.txbModel9.Text = NameModel09;
-                    this.txbModel10.Text = NameModel10;
+                    //this.txbModel6.Text = NameModel06;
+                    //this.txbModel7.Text = NameModel07;
+                    //this.txbModel8.Text = NameModel08;
+                    //this.txbModel9.Text = NameModel09;
+                    //this.txbModel10.Text = NameModel10;
                     
                 }));
             }

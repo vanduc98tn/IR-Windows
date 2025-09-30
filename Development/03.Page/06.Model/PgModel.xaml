@@ -160,11 +160,11 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
+                        <!--<RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>-->
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" Margin="0 0 0 0">
@@ -230,7 +230,7 @@
                             <TextBox Name="txbModel5"  Width="600" Grid.Row="0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" BorderThickness="0" Text="No Connect..." FontFamily="Bahnschrift SemiBold Condensed" FontSize="24"></TextBox>
                         </Border>
                     </Grid>
-                    <Grid Grid.Row="6" Margin=" 0 0 0 0">
+                    <!--<Grid Grid.Row="6" Margin=" 0 0 0 0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200"></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
@@ -279,7 +279,7 @@
                         <Border Margin="0,5,5,5" Grid.Column="1" Background="White" BorderBrush="#444444" BorderThickness="2" CornerRadius="10,10,10,10" Grid.Row="0" >
                             <TextBox Name="txbModel10"  Width="600" Grid.Row="0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" BorderThickness="0" Text="No Connect..." FontFamily="Bahnschrift SemiBold Condensed" FontSize="24"></TextBox>
                         </Border>
-                    </Grid>
+                    </Grid>-->
 
 
 

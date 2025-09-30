@@ -116,7 +116,8 @@
                         <ColumnDefinition Width="0.6*"></ColumnDefinition>
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                         <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
                         <ColumnDefinition Width="3.5*"></ColumnDefinition>
                         <ColumnDefinition Width="300"></ColumnDefinition>
 
@@ -131,16 +132,15 @@
                         <Label Name="lbEquipmentId" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="Equipment ID" FontFamily="Bahnschrift SemiBold Condensed" FontSize="20" ></Label>
                     </Border>
 
-                    <Label Grid.Column="2"
-                            FontSize="15" 
-                            FontWeight="Bold" 
-                            VerticalContentAlignment="Center" 
-                            HorizontalContentAlignment="Center"  Background="Transparent">Model</Label>
+                    <Label Grid.Column="2" FontSize="15" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Background="Transparent">Model</Label>
 
-                    <Border Margin="0,5,5,5" Grid.Column="3" Background="White" BorderBrush="#444444" BorderThickness="1" CornerRadius="10,10,10,10" Grid.Row="0" >
-                        <Label Name="lblModel" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="Model Name 01" FontFamily="Bahnschrift SemiBold Condensed" FontSize="20"></Label>
+                    <Border Margin="0,5,2,5" Grid.Column="3" Background="White" BorderBrush="#444444" BorderThickness="1" CornerRadius="10,2,2,10" Grid.Row="0" >
+                        <Label Name="lblModelNo" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="No." FontFamily="Bahnschrift SemiBold Condensed" FontSize="20"></Label>
                     </Border>
-                    <Border Margin="0,5,5,5" Grid.Column="4" Background="White" BorderBrush="#444444" BorderThickness="1" CornerRadius="10,10,10,10" Grid.Row="0" >
+                    <Border Margin="0,5,5,5" Grid.Column="4" Background="White" BorderBrush="#444444" BorderThickness="1" CornerRadius="2,10,10,2" Grid.Row="0" >
+                        <Label Name="lblModelName" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#333333" Content="Model Name..." FontFamily="Bahnschrift SemiBold Condensed" FontSize="20"></Label>
+                    </Border>
+                    <Border Margin="0,5,5,5" Grid.Column="5" Background="White" BorderBrush="#444444" BorderThickness="1" CornerRadius="10,10,10,10" Grid.Row="0" >
                         <Label Name="lblStatust" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="Green" Content="Update Statust Current Machine : Thông báo trạng thái máy " FontFamily="Bahnschrift SemiBold Condensed" FontSize="18"></Label>
                     </Border>
 
