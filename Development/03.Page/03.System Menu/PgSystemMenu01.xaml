@@ -334,7 +334,29 @@
 >
                                 </local:PLCButton>
                             </Grid>
-                        
+                            <Grid>
+                                <local:PLCButton
+                                            Grid.Column="0"
+                                            Margin="1"
+                                            Action="Momentary"
+                                            IsTabItem="False"
+                                            DeviceWrite="L" AddressWrite="509"
+                                            UseLampCodition="True"
+                                            DeviceLamp="L" AddressLamp="10509"
+                                            BackgroundLampOFF="Transparent"
+                                            BackgroundLampON="Red"
+                                            TextOFF="Enable Air Warning"
+                                            TextON="Disable Air Warning"
+                                            Content="Air Warning"
+                                            Background="Transparent"
+                                            Foreground="Black"
+                                            IsComfrim="True"
+                                            IsMesComfrim="Confrim Options Yes/No"
+                                           
+>
+                                </local:PLCButton>
+                            </Grid>
+
                     </UniformGrid>
 
                     <UniformGrid Grid.Column="1" Columns="1" Rows="10" Margin="0 0 10 0">
